@@ -8,6 +8,8 @@
   flex-wrap: wrap;
   /* flex-direction is row by default */
   justify-content: flex-start;
+  background-color: green;
+  overflow: hidden; /* FIXME what does this do? */ 
 }
 
 /* for medium sized screens; if 800 pixels >= screen_width > 500 pixels */
@@ -16,7 +18,7 @@
 	.nav_bar
 	{
 		justify-content: space-around;
-		/* evently distribue empty space */
+		/* evently distribute empty space */
 	}
 }
 
@@ -25,15 +27,28 @@
 {
 	.nav_bar
 	{
-		justify-content: space-around;
-		/* evently distribue empty space */
+		flex-direction: column;
+		/* we need flex-direction: column as small devices need the nav_bar's children vertically alligned */
 	}
 }
 
 
 li 
 {
-  display: inline;
+  float: left;
+}
+
+li a /* all <a> nested inside <li> */
+{
+	display: block;
+	padding: 8px;
+	color: black;
+	text-decoration: none;
+}
+
+li a:hover
+{
+	background-color: white;
 }
 
 body
@@ -54,11 +69,22 @@ body
 #main_title_div
 {
 	background-color: red;
-	height: 200px;
+	height: 50px;
 }
 
 #description_div
 {
 	background-color: yellow;
-	height: 100px;
+	height: 50px;
+}
+
+#main_title
+{
+	margin: auto;
+	color: green;
+}
+
+#app_description
+{
+	margin: auto;
 }
