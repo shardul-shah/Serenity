@@ -1,0 +1,64 @@
+/* for large screens; if screen_width >= 800 pixels */
+#nav_bar 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction is row by default */
+  justify-content: flex-start;
+}
+
+/* for medium sized screens; if 800 pixels >= screen_width > 500 pixels */
+@media all and (max-width: 800px)
+{
+	.nav_bar
+	{
+		justify-content: space-around;
+		/* evently distribue empty space */
+	}
+}
+
+/* for small sized screens; if screen_width <= 500 pixels  pixels */
+@media all and (max-width: 500px)
+{
+	.nav_bar
+	{
+		justify-content: space-around;
+		/* evently distribue empty space */
+	}
+}
+
+
+li 
+{
+  display: inline;
+}
+
+body
+{
+	/*background-image: url("forest_rain.jpg");
+	background-size: cover;*/
+}
+
+.container  
+{
+	display: flex;
+	flex-wrap: wrap;	
+	/* flex-direction is row by default */
+	align-items: center;
+	justify-content: center;
+}
+
+#main_title_div
+{
+	background-color: red;
+	height: 200px;
+}
+
+#description_div
+{
+	background-color: yellow;
+	height: 100px;
+}
