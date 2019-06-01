@@ -4,7 +4,10 @@
 
 			<title> Rain Project </title>
 
-			<link rel="stylesheet" href="index.css">
+			<link rel="stylesheet" type="text/css" href="index.css">
+
+			<script type="text/javascript" src="playSound.js" defer>
+			</script>
 
 		</head>
 
@@ -28,9 +31,9 @@
 		</div>
 
 		<br>
-		<audio id="ambient_sounds" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+		<audio id="ambient_sound" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
 		</audio>
-		<button id="play_button"> 
+		<button id="play_button" onclick="togglePlay()"> 
 		</button>
 
 		<br>
