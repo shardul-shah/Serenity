@@ -89,17 +89,19 @@ body
 	margin: auto;
 }
 
+/* by default, the play/pause button is displayed as play, as audio is paused */
 #play_pause_button
 {	
 	box-sizing: border-box;
 	padding: 0px;
 	width: 74px;
 	height: 74px;
+	outline: none;
 	border-style: solid;
 	border-width: 37px 0px 37px 74px;
 	border-color: transparent transparent transparent black;
+} 
 
-}
 
 /* leave here for now, for reference
 #pause_button
@@ -113,3 +115,8 @@ body
   	border-color: black;
 }
 */
+
+#play_pause_button:hover
+{
+	border-color: transparent transparent transparent purple;	
+}
