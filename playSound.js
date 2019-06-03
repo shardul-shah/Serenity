@@ -51,6 +51,7 @@ function displayPauseButton() {
 	toggle_btn.style.borderStyle = "double";
 	toggle_btn.style.borderWidth = "0px 0px 0px 37px";
 	toggle_btn.style.borderColor = "black";
+	toggle_btn.style.backgroundColor = "transparent";
 };
 
 // display default play button
@@ -58,4 +59,5 @@ function displayPlayButton() {
 	toggle_btn.style.borderStyle = "solid";
 	toggle_btn.style.borderWidth = "37px 0px 37px 74px";
 	toggle_btn.style.borderColor = "transparent transparent transparent black";
+	toggle_btn.style.backgroundColor = "transparent";
 };

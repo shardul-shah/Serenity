@@ -19,28 +19,28 @@
   			<li><a href="about.asp">Contact</a></li>
 		</ul>
 		<div class="container" id="main_title_div">
-		<h1 id="main_title">
+			<h1 id="main_title">
 			Serenity
-		</h1>
+			</h1>
 		</div>
 
 		<div class="container" id="description_div">
-		<p id="app_description">
+			<p id="app_description">
 			This is the result of me following my passion, and discovering my interests.
-		</p>
+			</p>
+		</div>
+
+		<div class="container" id="play_pause_button_div">
+			<audio id="ambient_sound" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+			</audio>
+			<button id="play_pause_button" onclick="togglePlay()" onmouseover="mouseOverEffect()" onmouseout="mouseOutEffect()">
+			</button>
+		</div>
+		<div class="container">
+  			<input type="range" min="1" max="100" value="50" class="slider" id="customRange">
 		</div>
 
 		<br>
-		<audio id="ambient_sound" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
-		</audio>
-		<button id="play_pause_button" onclick="togglePlay()" onmouseover="mouseOverEffect()" onmouseout="mouseOutEffect()">
-		 
-		</button>
-
-		<br>
-
-		<button id="pause_button">
-		</button>
 
 		<br>
 

@@ -100,8 +100,8 @@ body
 	border-style: solid;
 	border-width: 37px 0px 37px 74px;
 	border-color: transparent transparent transparent black;
+	background-color: transparent;
 } 
-
 
 /* leave here for now, for reference
 #pause_button
@@ -113,10 +113,88 @@ body
   	border-style: double;
   	border-width: 0px 0px 0px 37px;
   	border-color: black;
+  	background-color: transparent;
 }
 */
 
-#play_pause_button:hover
+
+#play_pause_button_div
 {
-	border-color: transparent transparent transparent purple;	
+	background-color: blue;
+	height: 90px;
 }
+
+/* CSS for actual slider */
+.slider
+{
+	-webkit-appearance: none; /* Override default CSS styles */
+	/*appearance: none; probably not needed */
+	 width: 20%; /* Full-width */
+	 height: 25px;
+	 outline: none;
+	 opacity: 0.5; /* default opacity without hover */
+	 -webkit-transition: opacity 0.3s, background-color 0.3s; /* for safari*/
+	 transition: opacity 0.3s, background-color: 0.3s; /* for other browsers */
+	 background-color: #F45C82; /* default BG colour without hover */
+	 border-radius: 7px;
+}
+
+
+/* fully show slider on hover (opacity: 0.6 -> 1) */
+.slider:hover
+{
+	opacity: 1;
+	background-color: #FF0041;
+} 
+
+
+/* Below is the code for having a non-image, vibrant slider thumb which glows on hover. Commented it out for now. /*
+/*
+/* CSS for slider-thumb/icon, for all browsers not Mozilla
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default CSS styles /*
+	/*appearance: none; probably not needed 
+	width: 30px; 
+	height: 25px;
+	cursor: pointer; /* Cursor on hover of thumb /*
+	background-color: #99CA9B; 
+	transition: background-color 0.3s;
+	-webkit-transition: background-color: 0.3s;
+} 
+
+/* CSS for slider-thumb/icon, for Mozilla 
+.slider::-moz-range-thumb { 
+	-webkit-appearance: none; /* Override default look 
+  	width: 30px; /* Set a specific slider handle width 
+  	height: 25px; /* Slider handle height 
+  	background-color: #99CA9B; 
+  	cursor: pointer; /* Cursor on hover of thumb
+  	transition: background-color 0.3s;
+}
+
+
+.slider::-webkit-slider-thumb:hover {
+	background-color: #4CAF50;
+}
+*/
+
+/* Below is the code for a unique, raindrop shaped slider thumb */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/*appearance: none; probably not needed */
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url("raindrop.png");
+	background-size: cover;
+}
+
+.slider::-moz-slider-thumb {
+	-webkit-appearance: none;
+	/*appearance: none; probably not needed */
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+	background-image: url("raindrop.png");
+	background-size: cover;
+} 
