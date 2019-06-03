@@ -1,10 +1,18 @@
-//TODO: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the ...
+//TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the ...
 // ... button, it shows the hover styled button for each play and pause? Right now it doesn't do that until ...
 // ... I take my mouse away from the button and then click back on it.
 
 var sound = document.getElementById("ambient_sound");
 var toggle_btn = document.getElementById("play_pause_button");
 
+function adjustVolume(newSliderValue) {
+	//newSliderValue is a value the user moves the slider to. 
+
+	//must divide by 100 as volume scales are from 0 to 1.0, and my slider is from 0 to 100.
+	sound.volume = newSliderValue/100
+	// leave below line for testing purposes 
+	// console.log(sound.volume, newSliderValue)
+};
 
 function togglePlay() {
 	//important: this function is only called when the pause/play button is actually clicked
@@ -61,3 +69,5 @@ function displayPlayButton() {
 	toggle_btn.style.borderColor = "transparent transparent transparent black";
 	toggle_btn.style.backgroundColor = "transparent";
 };
+
+

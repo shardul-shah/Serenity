@@ -37,7 +37,7 @@
 			</button>
 		</div>
 		<div class="container">
-  			<input type="range" min="1" max="100" value="50" class="slider" id="customRange">
+  			<input type="range" min="0" max="100" value="50" class="slider" id="customRange" oninput="adjustVolume(this.value)" onchange="adjustVolume(this.value)">
 		</div>
 
 		<br>
