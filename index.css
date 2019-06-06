@@ -147,8 +147,7 @@ body
 	background-color: #FF0041;
 } 
 
-
-/* Below is the code for having a non-image, vibrant slider thumb which glows on hover. Commented it out for now. /*
+/* Below is the code for having a non-image, vibrant slider thumb which glows on hover. Commented it out for now. Will see what to do with it in the future. /*
 /*
 /* CSS for slider-thumb/icon, for all browsers not Mozilla
 .slider::-webkit-slider-thumb {
@@ -172,13 +171,14 @@ body
   	transition: background-color 0.3s;
 }
 
-
 .slider::-webkit-slider-thumb:hover {
 	background-color: #4CAF50;
 }
 */
 
 /* Below is the code for a unique, raindrop shaped slider thumb */
+
+/* CSS for slider-thumb/icon, for all browsers not Mozilla */
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/*appearance: none; probably not needed */
@@ -189,6 +189,7 @@ body
 	background-size: cover;
 }
 
+/* CSS for slider-thumb/icon, for Mozilla */
 .slider::-moz-slider-thumb {
 	-webkit-appearance: none;
 	/*appearance: none; probably not needed */

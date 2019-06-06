@@ -61,7 +61,7 @@ function mouseOutEffect() {
 		toggle_btn.style.borderColor = "black";
 };
 
-// display default pause button
+// display default pause button through change in CSS
 function displayPauseButton() {
 	toggle_btn.style.borderStyle = "double";
 	toggle_btn.style.borderWidth = "0px 0px 0px 37px";
@@ -69,7 +69,7 @@ function displayPauseButton() {
 	toggle_btn.style.backgroundColor = "transparent";
 };
 
-// display default play button
+// display default play button through change in CSS
 function displayPlayButton() {
 	toggle_btn.style.borderStyle = "solid";
 	toggle_btn.style.borderWidth = "37px 0px 37px 74px";

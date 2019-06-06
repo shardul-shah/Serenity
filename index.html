@@ -5,7 +5,6 @@
 			<title> Rain Project </title>
 
 			<link rel="stylesheet" type="text/css" href="index.css">
-
 			<script type="text/javascript" src="playSound.js" defer>
 			</script>
 			<script type="text/javascript" src="muteButton.js" defer>
@@ -47,7 +46,7 @@
 			</button>
 		</div>
 		<div class="container">
-			<input type="checkbox" name="Mute/Unmute Button" id="mute_btn">
+			<!-- observe that the icon acts as a button, even though its element is img -->
 				<img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute/Unmute Button" title="Mute/Unmute Button" id="mute_icon" onclick="toggleMute()">
   			<input type="range" min="0" max="100" value="50" class="slider" id="custom_range" oninput="adjustVolume(this.value)" onchange="adjustVolume(this.value)">
 		</div>
