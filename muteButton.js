@@ -3,7 +3,6 @@ var volumeSlider = document.getElementById('custom_range');
 console.log(mute_icon.src);
 
 function toggleMute() {
-	console.log(77);
 	// if sound is currently playing (and thus mute icon is being displayed), and the mute icon is clicked
 	// mute the sound, change the icon cuurrently displayed to speaker, adjust the volume slider accordingly
 
@@ -13,7 +12,7 @@ function toggleMute() {
 	relative filepaths, this is a common source of bugs. The solution is to use element.getAttribute('src'), which yields the proper
 	relative filepath.
 
-	SUMMARY:
+	EXAMPLE ON MY MACHINE:
 
 	If an <img> exists with id='mute_icon'...
 
@@ -27,7 +26,7 @@ function toggleMute() {
 
 	mute_icon.getAttribute('src') == 'images/mute_icon.png'
 	as mute_icon.getAttribute('src') yields:
-	'images/mute_icon.png'
+	'images/mute_icon.png' (relative)
 
 	Credit: https://stackoverflow.com/questions/18149043/how-to-check-img-src-is-true-using-javascript */
 
@@ -35,14 +34,12 @@ function toggleMute() {
 		mute_icon.src = "images/speaker_icon.png";
 		sound.volume = 0;
 		custom_range.value = 0;
-		console.log(3);
 	}
 
 	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 	else {
-		console.log(69);
 		mute_icon.src = "images/mute_icon.png";	
 		sound.volume = volume;
 		custom_range.value = volume*100
