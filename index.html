@@ -8,6 +8,8 @@
 
 			<script type="text/javascript" src="playSound.js" defer>
 			</script>
+			<script type="text/javascript" src="muteButton.js" defer>
+			</script>
 
 		</head>
 
@@ -31,13 +33,23 @@
 		</div>
 
 		<div class="container" id="play_pause_button_div">
-			<audio id="ambient_sound" src="http://www.sousound.com/music/healing/healing_01.mp3" preload="auto">
+			<audio id="ambient_sound" src="https://www.soundjay.com/nature/sounds/rain-03.mp3" preload="auto">
 			</audio>
+				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
+					 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
+					 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). -->
+				<script>
+					var sound = document.getElementById("ambient_sound");
+					sound.volume = 0.5
+					//slider is by default at 50 (see <input> code below)
+				</script>
 			<button id="play_pause_button" onclick="togglePlay()" onmouseover="mouseOverEffect()" onmouseout="mouseOutEffect()">
 			</button>
 		</div>
 		<div class="container">
-  			<input type="range" min="0" max="100" value="50" class="slider" id="customRange" oninput="adjustVolume(this.value)" onchange="adjustVolume(this.value)">
+			<input type="checkbox" name="Mute/Unmute Button" id="mute_btn">
+				<img src="http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg" alt="Mute/Unmute Button" title="Mute/Unmute Button" id="mute_icon" onclick="toggleMute()">
+  			<input type="range" min="0" max="100" value="50" class="slider" id="custom_range" oninput="adjustVolume(this.value)" onchange="adjustVolume(this.value)">
 		</div>
 
 		<br>

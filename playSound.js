@@ -4,14 +4,21 @@
 
 var sound = document.getElementById("ambient_sound");
 var toggle_btn = document.getElementById("play_pause_button");
+var volume = sound.volume;
 
 function adjustVolume(newSliderValue) {
 	//newSliderValue is a value the user moves the slider to. 
 
 	//must divide by 100 as volume scales are from 0 to 1.0, and my slider is from 0 to 100.
-	sound.volume = newSliderValue/100
-	// leave below line for testing purposes 
-	// console.log(sound.volume, newSliderValue)
+	sound.volume = newSliderValue/100;
+	// we must keep a copy of the old sound volume value, for the case of the user changing the slider value but then muting sound	
+	volume = sound.volume;
+
+	if (mute_icon.src == "http://upload.wikimedia.org/wikipedia/commons/2/21/Speaker_Icon.svg")
+		mute_icon.src = "http://upload.wikimedia.org/wikipedia/commons/3/3f/Mute_Icon.svg";	
+
+		// leave below line for testing purposes 
+		// console.log(sound.volume, newSliderValue)
 };
 
 function togglePlay() {
@@ -20,11 +27,11 @@ function togglePlay() {
 
 	// sound is about to be paused->played, so display pause button
 	if (sound.paused) 
-		displayPauseButton()
+		displayPauseButton();
 
 	// sound is about to be played ->paused, so display play button
 	else 
-		displayPlayButton()
+		displayPlayButton();
 
 	return sound.paused ? sound.play() : sound.pause();
 };
@@ -69,5 +76,3 @@ function displayPlayButton() {
 	toggle_btn.style.borderColor = "transparent transparent transparent black";
 	toggle_btn.style.backgroundColor = "transparent";
 };
-
-
