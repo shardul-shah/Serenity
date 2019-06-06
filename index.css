@@ -185,7 +185,7 @@ body
 	width: 30px;
 	height: 25px;
 	cursor: pointer;
-	background-image: url("raindrop.png");
+	background-image: url("images/raindrop.png");
 	background-size: cover;
 }
 
@@ -196,6 +196,6 @@ body
 	width: 30px;
 	height: 25px;
 	cursor: pointer;
-	background-image: url("raindrop.png");
+	background-image: url("images/raindrop.png");
 	background-size: cover;
 } 

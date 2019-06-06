@@ -6,8 +6,8 @@ function adjustVolume(newSliderValue) {
 	// we must keep a copy of the old sound volume value, for the case of the user changing the slider value but then muting sound	
 	volume = sound.volume;
 
-	if (mute_icon.src == "speaker_icon.svg")
-		mute_icon.src = "mute_icon.svg";	
+	if (mute_icon.getAttribute('src') == "images/speaker_icon.png")
+		mute_icon.src = "images/mute_icon.png";	
 
 		// leave below line for testing purposes 
 		// console.log(sound.volume, newSliderValue)
