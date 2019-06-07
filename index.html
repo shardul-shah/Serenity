@@ -38,7 +38,9 @@
 			</audio>
 				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
 					 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
-					 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). -->
+					 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). 
+
+					 FIXME maybe change to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp -->
 				<script>
 					var sound = document.getElementById("ambient_sound");
 					sound.volume = 0.5
