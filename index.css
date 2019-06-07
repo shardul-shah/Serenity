@@ -198,3 +198,8 @@ body
 	background-image: url("images/raindrop.png");
 	background-size: cover;
 } 
+
+#mute_icon {
+	height: 25px;
+	width: 25px;
+}

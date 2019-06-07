@@ -1,6 +1,5 @@
 var mute_icon = document.getElementById("mute_icon");
 var volumeSlider = document.getElementById('custom_range');
-console.log(mute_icon.src);
 
 function toggleMute() {
 	// if sound is currently playing (and thus mute icon is being displayed), and the mute icon is clicked
@@ -26,7 +25,7 @@ function toggleMute() {
 
 	mute_icon.getAttribute('src') == 'images/mute_icon.png'
 	as mute_icon.getAttribute('src') yields:
-	'images/mute_icon.png' (relative)
+	'images/mute_icon.png' (relative).
 
 	Credit: https://stackoverflow.com/questions/18149043/how-to-check-img-src-is-true-using-javascript */
 
