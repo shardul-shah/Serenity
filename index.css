@@ -1,4 +1,7 @@
 /* FIXME Potentially implement Bootstrap & Grid into web applicattion */
+/* FIXME Additional sliders which are in collapsible are not 100% width (not same width as the 1st slider, how to fix?)
+/* not perfect centering, how do I fix this??? compare all the centers of the elements*/
+
 
 /* for large screens; if screen_width >= 800 pixels */
 #nav_bar 
@@ -58,13 +61,27 @@ body
 	background-size: cover;*/
 }
 
-.container  
+.container_vertical  
 {
 	display: flex;
 	flex-wrap: wrap;	
-	/* flex-direction is row by default */
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
+}
+
+.container_horizontal
+{
+	display: flex;
+	flex-wrap: wrap;	
+	align-items: center;
+	justify-content: center;
+	/* flex-direction is row by default */	
+}
+
+.container_vertical_2
+{
+	display: flex;
 }
 
 #main_title_div
@@ -134,6 +151,7 @@ body
 	 height: 25px;
 	 outline: none;
 	 opacity: 0.5; /* default opacity without hover */
+	 /*FIXME don't think webkit-transition & transition do anything here, maybe fix */
 	 -webkit-transition: opacity 0.3s, background-color 0.3s; /* for safari*/
 	 transition: opacity 0.3s, background-color: 0.3s; /* for other browsers */
 	 background-color: #F45C82; /* default BG colour without hover */
@@ -201,7 +219,55 @@ body
 	background-size: cover;
 } 
 
-#mute_icon {
+.mute_icon {
 	height: 25px;
 	width: 25px;
+}
+
+.slider_div {
+	height: 50px;
+	width: 100%;
+}
+
+
+#collapsible {
+	height: 30px;
+	opacity: 0.5; /* default opacity without hover */
+	-webkit-transition: opacity 0.3s, background-color 0.3s; /* for safari*/
+	transition: opacity 0.3s, background-color: 0.3s; /* for other browsers */
+	background-color: #F45C82; /* default BG colour without hover */
+  	color: black;
+  	cursor: pointer;
+  	padding: 10px;
+  	width: 30%;
+  	border: none;
+  	text-align: center;
+  	outline: none;
+  	font-size: 15px;
+  	line-height: 50%; /* vertically centers button text */
+} 
+
+#collapsible:hover
+{
+	opacity: 1;
+	background-color: #FF0041;	
+}
+
+#collapsible:active
+{
+	opacity: 1;
+	background-color: #FF0041;
+}
+
+#collapsed_div {
+  padding: 0 18px;
+  /*max-height: 0px;
+  transition: max-height 0.2s ease-out;*/
+  overflow: hidden;
+  display: none;
+}
+
+#forest_slider, #fire_slider, #wind_slider, #thunder_slider
+{
+	width: 200px;
 }

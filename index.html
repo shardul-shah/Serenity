@@ -18,6 +18,8 @@
 			</script>
 			<script type="text/javascript" src="slider.js" defer>
 			</script>
+			<script type="text/javascript" src="collapsibleButton.js" defer>
+			</script>
 
 		</head>
 
@@ -28,20 +30,28 @@
  			<li><a href="contact.asp">News</a></li>
   			<li><a href="about.asp">Contact</a></li>
 		</ul>
-		<div class="container" id="main_title_div">
+		<div class="container_vertical" id="main_title_div">
 			<h1 id="main_title">
 			Serenity
 			</h1>
 		</div>
 
-		<div class="container" id="description_div">
+		<div class="container_vertical" id="description_div">
 			<p id="app_description">
 			This is the result of me following my passion, and discovering my interests.
 			</p>
 		</div>
 
-		<div class="container" id="play_pause_button_div">
-			<audio id="ambient_sound" src="https://www.soundjay.com/nature/sounds/rain-03.mp3" preload="auto">
+		<div class="container_vertical" id="play_pause_button_div">
+			<audio loop id="rain_sound" src="https://www.soundjay.com/nature/sounds/rain-03.mp3" preload="auto">
+			</audio>
+			<audio loop id="thunder_sound" src="sounds/thunder.mp3" preload="auto">
+			</audio>
+			<audio loop id="wind_sound" src="sounds/wind.mp3" preload="auto">
+			</audio>
+			<audio loop id="forest_sound" src="sounds/forest.mp3" preload="auto">
+			</audio>
+			<audio loop id="fire_sound" src="sounds/fire.mp3" preload="auto">
 			</audio>
 				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
 					 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
@@ -49,20 +59,47 @@
 
 					 FIXME maybe change to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp -->
 				<script>
-					var sound = document.getElementById("ambient_sound");
+					var sound = document.getElementById("rain_sound");
 					sound.volume = 0.5
 					//slider is by default at 50 (see <input> code below)
 				</script>
 			<button id="play_pause_button" onclick="togglePlay()" onmouseover="mouseOverEffect()" onmouseout="mouseOutEffect()">
 			</button>
 		</div>
-		<div class="container">
+		<div class="container_horizontal" id="slider_div">
 			<!-- observe that the icon acts as a button, even though its element is img -->
-			<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" id="mute_icon" onclick="toggleMute()">
-  			<input type="range" min="0" max="100" value="50" class="slider" id="custom_range" oninput="adjustVolume(this.value)" onchange="adjustVolume(this.value)">
+			<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
+  				<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
 		</div>
+		<div class="container_horizontal">
+			<button id="collapsible" onclick="toggleCollapsible()">Open Collapsible</button>
+		</div>
+				<div class="container_vertical" id="collapsed_div">
+					<div class="container_horizontal" id="slider_div">
+						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
+  					</div>
 
-		<br>
+  					<div class="container_horizontal" id="slider_div">
+  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
+  					</div>
+
+  	  				<div class="container_horizontal" id="slider_div">
+  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
+  					</div>
+  	  				<div class="container_horizontal" id="slider_div">
+  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
+  					</div>
+  					<div class="container_horizontal" id="slider_div">
+  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
+  					</div>
+
+				</div>
+
 
 		<br>
 

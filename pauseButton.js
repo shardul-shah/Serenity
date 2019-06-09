@@ -1,24 +1,33 @@
 //TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the ...
 // ... button, it shows the hover styled button for each play and pause? Right now it doesn't do that until ...
 // ... I take my mouse away from the button and then click back on it.
-
-var sound = document.getElementById("ambient_sound");
+//TODO #2: Make an individual pause/play button for each sound (maybe)
+//TODO #3: Make master volume be controlled by main volume slider
 var toggle_btn = document.getElementById("play_pause_button");
-var volume = sound.volume;
 
 function togglePlay() {
 	//important: this function is only called when the pause/play button is actually clicked
 	// so whether or not the sound is paused or playing depends on audio's state AFTER the latest click in the DOM
 
 	// sound is about to be paused->played, so display pause button
-	if (sound.paused) 
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
 		displayPauseButton();
+		rain_sound.play();
+		forest_sound.play();
+		wind_sound.play();
+		fire_sound.play()
+		thunder_sound.play();
+	}
 
 	// sound is about to be played ->paused, so display play button
-	else 
+	else {
 		displayPlayButton();
-
-	return sound.paused ? sound.play() : sound.pause();
+		rain_sound.pause();
+		forest_sound.pause();
+		wind_sound.pause();
+		fire_sound.pause()
+		thunder_sound.pause();
+	}
 };
 
 function mouseOverEffect() {
