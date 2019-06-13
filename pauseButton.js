@@ -9,7 +9,7 @@ function togglePlay() {
 	//important: this function is only called when the pause/play button is actually clicked
 	// so whether or not the sound is paused or playing depends on audio's state AFTER the latest click in the DOM
 
-	// sound is about to be paused->played, so display pause button
+	// sound is about to be paused->played, so display pause button & play sound
 	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
 		displayPauseButton();
 		rain_sound.play();
@@ -19,7 +19,7 @@ function togglePlay() {
 		thunder_sound.play();
 	}
 
-	// sound is about to be played ->paused, so display play button
+	// sound is about to be played ->paused, so display play button & pause sound
 	else {
 		displayPlayButton();
 		rain_sound.pause();
@@ -33,7 +33,7 @@ function togglePlay() {
 function mouseOverEffect() {
 
 	// sound is currently paused, so display the hover style for play button
-	if (sound.paused) {
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
 		toggle_btn.style.borderColor = "transparent transparent transparent purple";
 	}
 
@@ -47,7 +47,7 @@ function mouseOverEffect() {
 function mouseOutEffect() {
 
 	//sound is currently paused, and mouse is not hovered over button, so display default play button style
-	if (sound.paused)
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused)
 		toggle_btn.style.borderColor = "transparent transparent transparent black";
 
 	//sound is currently playing, and mouse is not hovered over button, so display default pause button style

@@ -1,11 +1,5 @@
-/* FIXME Potentially implement Bootstrap & Grid into web applicattion */
-/* FIXME Additional sliders which are in collapsible are not 100% width (not same width as the 1st slider, how to fix?)
-/* not perfect centering, how do I fix this??? compare all the centers of the elements*/
-
-
 /* for large screens; if screen_width >= 800 pixels */
-#nav_bar 
-{
+#nav_bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -18,51 +12,42 @@
 }
 
 /* for medium sized screens; if 800 pixels >= screen_width > 500 pixels */
-@media all and (max-width: 800px)
-{
-	.nav_bar
-	{
+@media all and (max-width: 800px) {
+	.nav_bar {
 		justify-content: space-around;
 		/* evently distribute empty space */
 	}
 }
 
 /* for small sized screens; if screen_width <= 500 pixels  pixels */
-@media all and (max-width: 500px)
-{
-	.nav_bar
-	{
+@media all and (max-width: 500px) {
+	.nav_bar {
 		flex-direction: column;
 		/* we need flex-direction: column as small devices need the nav_bar's children vertically alligned */
 	}
 }
 
-li 
-{
+li  {
   float: left;
 }
 
-li a /* all <a> nested inside <li> */
-{
+li a /* all <a> nested inside <li> */ {
 	display: block;
 	padding: 8px;
 	color: black;
 	text-decoration: none;
 }
 
-li a:hover
-{
+li a:hover {
 	background-color: white;
 }
 
-body
-{
+body {
 	/*background-image: url("forest_rain.jpg");
 	background-size: cover;*/
 }
 
-.container_vertical  
-{
+.container_vertical {
 	display: flex;
 	flex-wrap: wrap;	
 	align-items: center;
@@ -70,8 +55,7 @@ body
 	flex-direction: column;
 }
 
-.container_horizontal
-{
+.container_horizontal {
 	display: flex;
 	flex-wrap: wrap;	
 	align-items: center;
@@ -79,37 +63,28 @@ body
 	/* flex-direction is row by default */	
 }
 
-.container_vertical_2
-{
-	display: flex;
-}
 
-#main_title_div
-{
+#main_title_div {
 	background-color: red;
 	height: 50px;
 }
 
-#description_div
-{
+#description_div {
 	background-color: yellow;
 	height: 50px;
 }
 
-#main_title
-{
+#main_title {
 	margin: auto;
 	color: green;
 }
 
-#app_description
-{
+#app_description {
 	margin: auto;
 }
 
 /* by default, the play/pause button is displayed as play, as audio is paused */
-#play_pause_button
-{	
+#play_pause_button {	
 	box-sizing: border-box;
 	padding: 0px;
 	width: 74px;
@@ -122,8 +97,7 @@ body
 } 
 
 /* leave here for now, for reference
-#pause_button
-{
+#pause_button {
 	box-sizing: border-box
 	padding: 0px;
 	width: 74px;
@@ -136,15 +110,13 @@ body
 */
 
 
-#play_pause_button_div
-{
+#play_pause_button_div {
 	background-color: blue;
 	height: 90px;
 }
 
 /* CSS for actual slider */
-.slider
-{
+.slider {
 	-webkit-appearance: none; /* Override default CSS styles */
 	/*appearance: none; probably not needed */
 	 width: 20%; /* Full-width */
@@ -160,8 +132,7 @@ body
 
 
 /* fully show slider on hover (opacity: 0.6 -> 1) */
-.slider:hover
-{
+.slider:hover {
 	opacity: 1;
 	background-color: #FF0041;
 } 
@@ -247,14 +218,12 @@ body
   	line-height: 50%; /* vertically centers button text */
 } 
 
-#collapsible:hover
-{
+#collapsible:hover {
 	opacity: 1;
 	background-color: #FF0041;	
 }
 
-#collapsible:active
-{
+#collapsible:active {
 	opacity: 1;
 	background-color: #FF0041;
 }
@@ -267,7 +236,6 @@ body
   display: none;
 }
 
-#forest_slider, #fire_slider, #wind_slider, #thunder_slider
-{
+#forest_slider, #fire_slider, #wind_slider, #thunder_slider {
 	width: 200px;
 }

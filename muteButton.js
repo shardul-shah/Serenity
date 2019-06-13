@@ -12,14 +12,13 @@ var thunder_slider = document.getElementById('thunder_slider');
 var rain_sound = document.getElementById("rain_sound");
 var rain_volume = rain_sound.volume;
 var forest_sound = document.getElementById("forest_sound");
-var forest_volume = rain_sound.volume;
+var forest_volume = forest_sound.volume;
 var wind_sound = document.getElementById("wind_sound");
-var wind_volume = rain_sound.volume;
+var wind_volume = wind_sound.volume;
 var fire_sound = document.getElementById("fire_sound");
-var fire_volume = rain_sound.volume;
+var fire_volume = fire_sound.volume;
 var thunder_sound = document.getElementById("thunder_sound");
-var thunder_volume = rain_sound.volume;
-
+var thunder_volume = thunder_sound.volume;
 
 
 function toggleMute(soundType) {
@@ -49,15 +48,17 @@ function toggleMute(soundType) {
 	'images/mute_icon.png' (relative).
 
 	Credit: https://stackoverflow.com/questions/18149043/how-to-check-img-src-is-true-using-javascript */
+
 	if (soundType == "rain") {
 
+		// if rain sound is currently playing and the speaker icon is clicked... 
 		if (rain_mute_icon.getAttribute('src') == "images/mute_icon.png") {
 			rain_mute_icon.src = "images/speaker_icon.png";
 			rain_sound.volume = 0;
 			rain_slider.value = 0;
 		}
 
-	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
+	// if rain sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
@@ -69,13 +70,14 @@ function toggleMute(soundType) {
 
 	else if (soundType == 'forest') {
 
+		// if forest sound is currently playing and the speaker icon is clicked... 
 		if (forest_mute_icon.getAttribute('src') == "images/mute_icon.png") {
 			forest_mute_icon.src = "images/speaker_icon.png";
 			forest_sound.volume = 0;
 			forest_slider.value = 0;
 		}
 
-	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
+	// if forest sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
@@ -87,13 +89,14 @@ function toggleMute(soundType) {
 
 	else if (soundType == 'wind') {
 
+		// if wind sound is currently playing and the speaker icon is clicked... 
 		if (wind_mute_icon.getAttribute('src') == "images/mute_icon.png") {
 			wind_mute_icon.src = "images/speaker_icon.png";
 			wind_sound.volume = 0;
 			wind_slider.value = 0;
 		}
 
-	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
+	// if wind sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
@@ -104,13 +107,15 @@ function toggleMute(soundType) {
 	}
 
 	else if (soundType == 'fire') {
+
+		// if fire sound is currently playing and the speaker icon is clicked... 
 		if (fire_mute_icon.getAttribute('src') == "images/mute_icon.png") {
 			fire_mute_icon.src = "images/speaker_icon.png";
 			fire_sound.volume = 0;
 			fire_slider.value = 0;
 		}
 
-	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
+	// if fire sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
@@ -121,13 +126,14 @@ function toggleMute(soundType) {
 	}
 
 	else {
+		// if thunder sound is currently playing and the speaker icon is clicked... 
 		if (thunder_mute_icon.getAttribute('src') == "images/mute_icon.png") {
 			thunder_mute_icon.src = "images/speaker_icon.png";
 			thunder_sound.volume = 0;
 			thunder_slider.value = 0;
 		}
 
-	// if sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
+	// if thunder sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {

@@ -54,14 +54,22 @@
 			<audio loop id="fire_sound" src="sounds/fire.mp3" preload="auto">
 			</audio>
 				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
-					 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
-					 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). 
+				 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
+				 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). 
+				 -->
 
-					 FIXME maybe change to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp -->
 				<script>
-					var sound = document.getElementById("rain_sound");
-					sound.volume = 0.5
-					//slider is by default at 50 (see <input> code below)
+					var rain_sound = document.getElementById("rain_sound");
+					var forest_sound = document.getElementById("forest_sound");
+					var wind_sound = document.getElementById("wind_sound");
+					var fire_sound = document.getElementById("fire_sound");
+					var thunder_sound = document.getElementById("thunder_sound");
+
+					var sounds = [rain_sound, forest_sound, wind_sound, fire_sound, thunder_sound];
+
+					for (var i = 0; i < sounds.length; i++)
+						sounds[i].volume = 0.5;
+
 				</script>
 			<button id="play_pause_button" onclick="togglePlay()" onmouseover="mouseOverEffect()" onmouseout="mouseOutEffect()">
 			</button>
@@ -72,7 +80,7 @@
   				<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
 		</div>
 		<div class="container_horizontal">
-			<button id="collapsible" onclick="toggleCollapsible()">Open Collapsible</button>
+			<button id="collapsible" onclick="toggleCollapsible()">Control Specific Sound Types</button>
 		</div>
 				<div class="container_vertical" id="collapsed_div">
 					<div class="container_horizontal" id="slider_div">
@@ -94,13 +102,10 @@
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
   					</div>
   					<div class="container_horizontal" id="slider_div">
-  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
-  						<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
+  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
-
 				</div>
-
-
 		<br>
 
 		<button onclick="do_x" id="animation_btn">

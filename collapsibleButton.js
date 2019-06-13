@@ -1,5 +1,3 @@
-//FIXME: figure out how to get hover effect working after one click on this button (GlowEffect being displayed perm.)
-
 var collapsible_btn = document.getElementById("collapsible");
 var collapsed_div = document.getElementById("collapsed_div"); 
 

@@ -1,0 +1,20 @@
+TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the ...
+button, it shows the hover styled button for each play and pause? Right now it doesn't do that until ...
+I take my mouse away from the button and then click back on it.
+
+TODO #2: Make an individual pause/play button for each sound (maybe).
+
+TODO #3: Make master volume be controlled by main volume slider.
+
+TODO #4: might be able to get away without var rain_sound = document.getElementById("rain_sound"); ...
+for each type of sound, as they are initialized in the HTML script code. And remove the many initialization statements.
+
+TODO #5: maybe change script in HTML that initializes volumes to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp 
+
+TODO #6: Potentially implement more of Bootstrap & Grid into web application
+
+TODO #7: Additional sliders which are in collapsible are not 100% width (not same width as the 1st slider, how to fix? And why is this?)
+
+TODO #8: not perfect centering, how do I fix this??? Compare all the centers of the elements and observe the centers are not all alligned. 
+
+TODO #9: Collapsible button loses hover after 1st click, how to fix this? (How can I make GlowEffect be displayed perm.?)

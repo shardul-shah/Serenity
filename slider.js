@@ -1,36 +1,47 @@
 function adjustVolume(newSliderValue, soundType) {
-	//newSliderValue is a value the user moves the slider to. 
-
-	//must divide by 100 as volume scales are from 0 to 1.0, and my slider is from 0 to 100.
-	sound.volume = newSliderValue/100;
-	// we must keep a copy of the old sound volume value, for the case of the user changing the slider value but then muting sound	
-	volume = sound.volume;
-
+	//newSliderValue is the value the user moves the slider to. 
+	
 	if (soundType == "rain") {
-		if (rain_mute_icon.getAttribute('src') == "images/speaker_icon.png")
-			rain_mute_icon.src = "images/mute_icon.png";	
 
+		//must divide by 100 as volume scales are from 0 to 1.0, and my slider is from 0 to 100.
+		rain_sound.volume = newSliderValue/100;
+
+		// we must keep a copy of the old sound volume value, for the case of the user changing the slider value but then muting sound	
+		rain_volume = rain_sound.volume;
+
+		//the same comment applies to each of the soundTypes below
+
+		if (rain_mute_icon.getAttribute('src') == "images/speaker_icon.png") //if sound is muted (volume = 0)
+			rain_mute_icon.src = "images/mute_icon.png";	
 	}
 
 	else if (soundType == "forest") {
-		if (forest_mute_icon.getAttribute('src') == "images/speaker_icon.png")
-			forest_icon.src = "images/mute_icon.png";	
+		forest_sound.volume = newSliderValue/100;
+		forest_volume = forest_sound.volume;
+		if (forest_mute_icon.getAttribute('src') == "images/speaker_icon.png") //if sound is muted (volume = 0)
+			forest_mute_icon.src = "images/mute_icon.png";	
 	}
 
 	else if (soundType == "wind") {
-		if (wind_mute_icon.getAttribute('src') == "images/speaker_icon.png")
+		wind_sound.volume = newSliderValue/100;
+		wind_volume = wind_sound.volume;
+		if (wind_mute_icon.getAttribute('src') == "images/speaker_icon.png") //if sound is muted (volume = 0)
 			wind_mute_icon.src = "images/mute_icon.png";	
 	}
 	
 	else if (soundType == "fire") {
-		if (fire_mute_icon.getAttribute('src') == "images/speaker_icon.png")
+		fire_sound.volume = newSliderValue/100;
+		fire_volume = fire_sound.volume;
+		if (fire_mute_icon.getAttribute('src') == "images/speaker_icon.png") //if sound is muted (volume = 0)
 			fire_mute_icon.src = "images/mute_icon.png";	
 	}
 
-	else 
-		if (thunder_mute_icon.getAttribute('src') == "images/speaker_icon.png")
+	else {
+		thunder_sound.volume = newSliderValue/100;
+		thunder_volume = thunder_sound.volume;
+		if (thunder_mute_icon.getAttribute('src') == "images/speaker_icon.png") //if sound is muted (volume = 0)
 			thunder_mute_icon.src = "images/mute_icon.png";	
-	
+	}
 		// leave below line for testing purposes 
 		// console.log(sound.volume, newSliderValue)
 };
