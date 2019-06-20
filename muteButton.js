@@ -1,25 +1,31 @@
+//Mute Icons
+
 var rain_mute_icon = document.getElementById("rain_mute_icon");
-var rain_slider = document.getElementById('rain_slider');
 var forest_mute_icon = document.getElementById("forest_mute_icon");
-var forest_slider = document.getElementById('forest_slider');
 var wind_mute_icon = document.getElementById("wind_mute_icon");
-var wind_slider = document.getElementById('wind_slider');
 var fire_mute_icon = document.getElementById("fire_mute_icon");
-var fire_slider = document.getElementById('fire_slider');
 var thunder_mute_icon = document.getElementById("thunder_mute_icon");
+var master_mute_icon = document.getElementById("master_mute_icon");
+
+//Sliders
+var rain_slider = document.getElementById('rain_slider');
+var forest_slider = document.getElementById('forest_slider');
+var wind_slider = document.getElementById('wind_slider');
+var fire_slider = document.getElementById('fire_slider');
 var thunder_slider = document.getElementById('thunder_slider');
 
-var rain_sound = document.getElementById("rain_sound");
+//Sounds and sound array in HTML script
+
+//Volumes for each Sound
 var rain_volume = rain_sound.volume;
-var forest_sound = document.getElementById("forest_sound");
 var forest_volume = forest_sound.volume;
-var wind_sound = document.getElementById("wind_sound");
 var wind_volume = wind_sound.volume;
-var fire_sound = document.getElementById("fire_sound");
 var fire_volume = fire_sound.volume;
-var thunder_sound = document.getElementById("thunder_sound");
 var thunder_volume = thunder_sound.volume;
 
+var volumes = [rain_volume, forest_volume, wind_volume, fire_volume, thunder_volume];
+var mute_icons = [rain_mute_icon, forest_mute_icon, wind_mute_icon, fire_mute_icon, thunder_mute_icon, master_mute_icon];
+var sliders = [rain_slider, forest_slider, wind_slider, fire_slider, thunder_slider];
 
 function toggleMute(soundType) {
 	// if sound is currently playing (and thus mute icon is being displayed), and the mute icon is clicked

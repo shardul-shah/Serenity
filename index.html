@@ -59,6 +59,7 @@
 				 -->
 
 				<script>
+					//Sounds
 					var rain_sound = document.getElementById("rain_sound");
 					var forest_sound = document.getElementById("forest_sound");
 					var wind_sound = document.getElementById("wind_sound");
@@ -76,34 +77,31 @@
 		</div>
 		<div class="container_horizontal" id="slider_div">
 			<!-- observe that the icon acts as a button, even though its element is img -->
-			<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
-  				<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
 		</div>
 		<div class="container_horizontal">
 			<button id="collapsible" onclick="toggleCollapsible()">Control Specific Sound Types</button>
 		</div>
 				<div class="container_vertical" id="collapsed_div">
 					<div class="container_horizontal" id="slider_div">
+						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
+  					</div>
+  					<div class="container_horizontal" id="slider_div">
 						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 
-  					<div class="container_horizontal" id="slider_div">
+  	  				<div class="container_horizontal" id="slider_div">
   						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
   					</div>
-
   	  				<div class="container_horizontal" id="slider_div">
   						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
   					</div>
-  	  				<div class="container_horizontal" id="slider_div">
+  					<div class="container_horizontal" id="slider_div">
   						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
-  					</div>
-  					<div class="container_horizontal" id="slider_div">
-  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 				</div>
 		<br>

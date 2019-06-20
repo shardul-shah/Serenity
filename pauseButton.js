@@ -1,8 +1,3 @@
-//TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the ...
-// ... button, it shows the hover styled button for each play and pause? Right now it doesn't do that until ...
-// ... I take my mouse away from the button and then click back on it.
-//TODO #2: Make an individual pause/play button for each sound (maybe)
-//TODO #3: Make master volume be controlled by main volume slider
 var toggle_btn = document.getElementById("play_pause_button");
 
 function togglePlay() {
