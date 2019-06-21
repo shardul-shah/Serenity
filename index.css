@@ -75,9 +75,16 @@ body {
 }
 
 #main_title {
-	margin: auto;
-	color: green;
+	font-family:Georgia, serif;
+ 	color:#444;
+ 	font-variant: small-caps; 
+ 	text-transform: none; 
+ 	font-weight: 100; 
+ 	font-size: 50px; 
+ 
 }
+
+
 
 #app_description {
 	margin: auto;
@@ -195,7 +202,7 @@ body {
 	width: 25px;
 }
 
-.slider_div {
+#slider_div {
 	height: 50px;
 	width: 100%;
 }
@@ -236,6 +243,10 @@ body {
   display: none;
 }
 
-#forest_slider, #fire_slider, #wind_slider, #thunder_slider {
-	width: 200px;
+#rain_slider, #forest_slider, #fire_slider, #wind_slider, #thunder_slider {
+	width: 25%;
+}
+
+.fas {
+	font-size: 19px;
 }
