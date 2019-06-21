@@ -21,3 +21,5 @@ TODO #10: maybe instead of using fire, rain, thunder, etc, all the variables sho
 TODO #11: Maybe change arrays into dictionaries for clarity in code, and actually use the arrays in code. 
 
 TODO #12: Change all event handler functions of JS into 1 file and structure them in order of appearance in HTML.
+
+TODO #13: 

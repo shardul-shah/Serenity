@@ -64,8 +64,16 @@ function toggleMute(soundType) {
 			rain_slider.value = 0;
 		}
 
+		//case of slider manually being put to 0 and then sound being played
+		else if (rain_mute_icon.getAttribute('src') == "images/speaker_icon.png" && rain_volume == 0) {
+			rain_mute_icon.src = "images/mute_icon.png";
+			rain_sound.volume = 0.01;
+			rain_slider.value = 1;
+			rain_volume = rain_sound.volume;
+		}
+
 	// if rain sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
-	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
+	// unmute the sound to the volume it was before (stored in var rain_volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
 			rain_mute_icon.src = "images/mute_icon.png";	
