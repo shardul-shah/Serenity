@@ -1,4 +1,5 @@
 /* for large screens; if screen_width >= 800 pixels */
+
 #nav_bar {
   list-style-type: none;
   margin: 0;
@@ -7,13 +8,13 @@
   flex-wrap: wrap;
   /* flex-direction is row by default */
   justify-content: flex-start;
-  background-color: green;
-  overflow: hidden; /* FIXME what does this do? */ 
+  background-color: #CE4F49;
+  overflow: hidden; /* FIXME what does this do? */  
 }
 
 /* for medium sized screens; if 800 pixels >= screen_width > 500 pixels */
 @media all and (max-width: 800px) {
-	.nav_bar {
+	#nav_bar {
 		justify-content: space-around;
 		/* evently distribute empty space */
 	}
@@ -21,7 +22,7 @@
 
 /* for small sized screens; if screen_width <= 500 pixels  pixels */
 @media all and (max-width: 500px) {
-	.nav_bar {
+	#nav_bar {
 		flex-direction: column;
 		/* we need flex-direction: column as small devices need the nav_bar's children vertically alligned */
 	}
@@ -39,12 +40,15 @@ li a /* all <a> nested inside <li> */ {
 }
 
 li a:hover {
-	background-color: white;
+	background-color: #accbe1;
 }
 
 body {
-	/*background-image: url("forest_rain.jpg");
-	background-size: cover;*/
+	/* 
+	background-image: url("images/forest_rain.jpg");
+	background-size: cover;
+	*/
+	background-color: #accbe1;
 }
 
 .container_vertical {
@@ -65,29 +69,33 @@ body {
 
 
 #main_title_div {
-	background-color: red;
-	height: 50px;
+	height: 100px;
+	margin: auto auto -30px auto;
+
 }
 
 #description_div {
-	background-color: yellow;
-	height: 50px;
+	height: 85px;
 }
 
 #main_title {
-	font-family:Georgia, serif;
- 	color:#444;
- 	font-variant: small-caps; 
+	font-family: Great Vibes, Bilbo Swash Caps, Georgia, serif;
+ 	color: #CE4F49;
  	text-transform: none; 
- 	font-weight: 100; 
- 	font-size: 50px; 
+ 	font-weight: bolder;
+ 	font-size: 70px; 
+ 	letter-spacing: 3px;
  
 }
 
-
-
 #app_description {
-	margin: auto;
+	font-family: Bilbo Swash Caps, Times New Roman, Georgia, serif;
+ 	color: #CE4F49;
+ 	text-transform: none; 
+ 	font-weight: bolder;
+ 	font-size: 35px; 
+ 	letter-spacing: 1px;
+ 	text-align: center;
 }
 
 /* by default, the play/pause button is displayed as play, as audio is paused */
@@ -118,7 +126,6 @@ body {
 
 
 #play_pause_button_div {
-	background-color: blue;
 	height: 90px;
 }
 

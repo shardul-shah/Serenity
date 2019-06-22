@@ -58,15 +58,15 @@ function toggleMute(soundType) {
 	if (soundType == "rain") {
 
 		// if rain sound is currently playing and the speaker icon is clicked... 
-		if (rain_mute_icon.getAttribute('src') == "images/mute_icon.png") {
-			rain_mute_icon.src = "images/speaker_icon.png";
+		if (rain_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			rain_mute_icon.src = "images/mute_icon.png";
 			rain_sound.volume = 0;
 			rain_slider.value = 0;
 		}
 
-		//case of slider manually being put to 0 and then sound being played
-		else if (rain_mute_icon.getAttribute('src') == "images/speaker_icon.png" && rain_volume == 0) {
-			rain_mute_icon.src = "images/mute_icon.png";
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (rain_mute_icon.getAttribute('src') == "images/mute_icon.png" && rain_volume == 0) {
+			rain_mute_icon.src = "images/speaker_icon.png";
 			rain_sound.volume = 0.01;
 			rain_slider.value = 1;
 			rain_volume = rain_sound.volume;
@@ -76,7 +76,7 @@ function toggleMute(soundType) {
 	// unmute the sound to the volume it was before (stored in var rain_volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
-			rain_mute_icon.src = "images/mute_icon.png";	
+			rain_mute_icon.src = "images/speaker_icon.png";	
 			rain_sound.volume = rain_volume;
 			rain_slider.value = rain_volume*100;
 		}
@@ -85,17 +85,25 @@ function toggleMute(soundType) {
 	else if (soundType == 'forest') {
 
 		// if forest sound is currently playing and the speaker icon is clicked... 
-		if (forest_mute_icon.getAttribute('src') == "images/mute_icon.png") {
-			forest_mute_icon.src = "images/speaker_icon.png";
+		if (forest_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			forest_mute_icon.src = "images/mute_icon.png";
 			forest_sound.volume = 0;
 			forest_slider.value = 0;
+		}
+
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (forest_mute_icon.getAttribute('src') == "images/mute_icon.png" && forest_volume == 0) {
+			forest_mute_icon.src = "images/speaker_icon.png";
+			forest_sound.volume = 0.01;
+			forest_slider.value = 1;
+			forest_volume = forest_sound.volume;
 		}
 
 	// if forest sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
-			forest_mute_icon.src = "images/mute_icon.png";	
+			forest_mute_icon.src = "images/speaker_icon.png";	
 			forest_sound.volume = forest_volume;
 			forest_slider.value = forest_volume*100;
 		}
@@ -104,17 +112,25 @@ function toggleMute(soundType) {
 	else if (soundType == 'wind') {
 
 		// if wind sound is currently playing and the speaker icon is clicked... 
-		if (wind_mute_icon.getAttribute('src') == "images/mute_icon.png") {
-			wind_mute_icon.src = "images/speaker_icon.png";
+		if (wind_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			wind_mute_icon.src = "images/mute_icon.png";
 			wind_sound.volume = 0;
 			wind_slider.value = 0;
+		}
+
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (wind_mute_icon.getAttribute('src') == "images/mute_icon.png" && wind_volume == 0) {
+			wind_mute_icon.src = "images/speaker_icon.png";
+			wind_sound.volume = 0.01;
+			wind_slider.value = 1;
+			wind_volume = wind_sound.volume;
 		}
 
 	// if wind sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
-			wind_mute_icon.src = "images/mute_icon.png";	
+			wind_mute_icon.src = "images/speaker_icon.png";	
 			wind_sound.volume = wind_volume;
 			wind_slider.value = wind_volume*100;
 		}
@@ -123,17 +139,24 @@ function toggleMute(soundType) {
 	else if (soundType == 'fire') {
 
 		// if fire sound is currently playing and the speaker icon is clicked... 
-		if (fire_mute_icon.getAttribute('src') == "images/mute_icon.png") {
-			fire_mute_icon.src = "images/speaker_icon.png";
+		if (fire_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			fire_mute_icon.src = "images/mute_icon.png";
 			fire_sound.volume = 0;
 			fire_slider.value = 0;
 		}
 
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (fire_mute_icon.getAttribute('src') == "images/mute_icon.png" && fire_volume == 0) {
+			fire_mute_icon.src = "images/speaker_icon.png";
+			fire_sound.volume = 0.01;
+			fire_slider.value = 1;
+			fire_volume = fire_sound.volume;
+		}
 	// if fire sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
-			fire_mute_icon.src = "images/mute_icon.png";	
+			fire_mute_icon.src = "images/speaker_icon.png";	
 			fire_sound.volume = fire_volume;
 			fire_slider.value = fire_volume*100;
 		}
@@ -141,17 +164,25 @@ function toggleMute(soundType) {
 
 	else {
 		// if thunder sound is currently playing and the speaker icon is clicked... 
-		if (thunder_mute_icon.getAttribute('src') == "images/mute_icon.png") {
-			thunder_mute_icon.src = "images/speaker_icon.png";
+		if (thunder_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			thunder_mute_icon.src = "images/mute_icon.png";
 			thunder_sound.volume = 0;
 			thunder_slider.value = 0;
+		}
+
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (thunder_mute_icon.getAttribute('src') == "images/mute_icon.png" && thunder_volume == 0) {
+			thunder_mute_icon.src = "images/speaker_icon.png";
+			thunder_sound.volume = 0.01;
+			thunder_slider.value = 1;
+			thunder_volume = thunder_sound.volume;
 		}
 
 	// if thunder sound is currently muted (and thus speaker icon is being displayed), and the speaker icon is clicked...
 	// unmute the sound to the volume it was before (stored in var volume), and adjust the slider back to where it was before
 	// and change the icon currently displayed to mute 
 		else {
-			thunder_mute_icon.src = "images/mute_icon.png";	
+			thunder_mute_icon.src = "images/speaker_icon.png";	
 			thunder_sound.volume = thunder_volume;
 			thunder_slider.value = thunder_volume*100;
 		}

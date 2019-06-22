@@ -13,6 +13,8 @@
 
 			<link rel="stylesheet" type="text/css" href="index.css">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+			<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+			<link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
 			<script type="text/javascript" src="pauseButton.js" defer>
 			</script>
 			<script type="text/javascript" src="muteButton.js" defer>
@@ -33,7 +35,7 @@
 		</ul>
 		<div class="container_vertical" id="main_title_div">
 			<h1 id="main_title">
-			SERENITY
+			Serenity
 			</h1>
 		</div>
 
@@ -46,7 +48,7 @@
 		<div class="container_vertical" id="play_pause_button_div">
 			<audio loop id="rain_sound" src="https://www.soundjay.com/nature/sounds/rain-03.mp3" preload="auto">
 			</audio>
-			<audio loop id="thunder_sound" src="sounds/thunder.mp3" preload="auto">
+			<audio loop id="thunder_sound" src="sounds/thunder.mp3" preload="auto"> <!-- Original source of sound: https://freesound.org/people/bone666138/sounds/198858/ -->
 			</audio>
 			<audio loop id="wind_sound" src="sounds/wind.mp3" preload="auto">
 			</audio>
@@ -84,35 +86,35 @@
 						<i class="fas fa-cloud-rain">
 						</i> 
 						<!-- observe that these icons act as a button, even though their elements are img -->
-						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
+						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
   					</div>
 
   					<div class="container_horizontal" id="slider_div">
   						<i class="fas fa-tree"> 
   						</i> 
-						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
+						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 
   	  				<div class="container_horizontal" id="slider_div">
   	  					<i class="fas fa-wind"> 
   	  					</i> 
-  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
+  						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
   					</div>
 
   	  				<div class="container_horizontal" id="slider_div">
   	  					<i class="fas fa-fire">
   	  					</i> 
-  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
+  						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
   					</div>
 
   					<div class="container_horizontal" id="slider_div">
   						<i class="fas fa-bolt">
   						</i> 
-  						<img src="images/mute_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
+  						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
   					</div>
 				</div>
