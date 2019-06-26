@@ -112,19 +112,6 @@ body {
 	opacity: 0.5;
 } 
 
-/* leave here for now, for reference
-#pause_button {
-	box-sizing: border-box
-	padding: 0px;
-	width: 74px;
-  	height: 74px;
-  	border-style: double;
-  	border-width: 0px 0px 0px 37px;
-  	border-color: black;
-  	background-color: transparent;
-}
-*/
-
 
 #play_pause_button_div {
 	height: 16.5vmin;
@@ -244,8 +231,6 @@ body {
 
 #collapsed_div {
   padding: 0 18px;
-  /*max-height: 0px;
-  transition: max-height 0.2s ease-out;*/
   overflow: hidden;
   display: none;
 }
