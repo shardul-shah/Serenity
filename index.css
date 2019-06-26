@@ -34,7 +34,7 @@ li  {
 
 li a /* all <a> nested inside <li> */ {
 	display: block;
-	padding: 8px;
+	padding: 8px; 
 	color: black;
 	text-decoration: none;
 }
@@ -69,46 +69,47 @@ body {
 
 
 #main_title_div {
-	height: 100px;
-	margin: auto auto -30px auto;
+	height: 14vh;
+	margin: 3.5vh auto -2vh auto;
 
 }
 
 #description_div {
-	height: 85px;
+	height: 12vh;
 }
 
 #main_title {
-	font-family: Great Vibes, Bilbo Swash Caps, Georgia, serif;
+	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
  	color: #F45C82;
  	text-transform: none; 
  	font-weight: bolder;
- 	font-size: 5vmax; 
- 	letter-spacing: 3px;
+ 	font-size: 7vmax; 
+ 	letter-spacing: 0.21vw;
  
 }
 
 #app_description {
-	font-family: Bilbo Swash Caps, Times New Roman, Georgia, serif;
+	font-family: Bilbo Swash Caps, Great Vibes, Times New Roman, Georgia, serif;
  	color: #F45C82;
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 2.5vmax; 
- 	letter-spacing: 1px;
+ 	letter-spacing: 0.07vw;
  	text-align: center;
 }
 
 /* by default, the play/pause button is displayed as play, as audio is paused */
 #play_pause_button {	
 	box-sizing: border-box;
-	padding: 0px;
-	width: 74px;
-	height: 74px;
+	padding: 0vmin;
+	width: 14vmin;
+	height: 14vmin;
 	outline: none;
 	border-style: solid;
-	border-width: 37px 0px 37px 74px;
-	border-color: transparent transparent transparent black;
+	border-width: 7vmin 0vmin 7vmin 14vmin;
+	border-color: transparent transparent transparent #F45C82;
 	background-color: transparent;
+	opacity: 0.5;
 } 
 
 /* leave here for now, for reference
@@ -126,7 +127,7 @@ body {
 
 
 #play_pause_button_div {
-	height: 90px;
+	height: 16.5vmin;
 }
 
 /* CSS for actual slider */
@@ -223,13 +224,12 @@ body {
 	background-color: #F45C82; /* default BG colour without hover */
   	color: black;
   	cursor: pointer;
-  	padding: 10px;
   	width: 30%;
   	border: none;
   	text-align: center;
   	outline: none;
-  	font-size: 15px;
-  	line-height: 50%; /* vertically centers button text */
+  	font-size: 1.5vmax;
+  	font-family: Georgia;
 } 
 
 #collapsible:hover {
