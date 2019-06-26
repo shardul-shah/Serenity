@@ -96,6 +96,7 @@ body {
  	font-size: 2.5vmax; 
  	letter-spacing: 0.07vw;
  	text-align: center;
+ 	line-height: 1.6; /* recommended line-height (only applies to mobile views of my website) */
 }
 
 /* by default, the play/pause button is displayed as play, as audio is paused */
