@@ -175,10 +175,10 @@ body {
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	/*appearance: none; probably not needed */
-	width: 30px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
-	background-image: url("images/raindrop.png");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
 	background-size: cover;
 }
 
@@ -186,10 +186,10 @@ body {
 .slider::-moz-slider-thumb {
 	-webkit-appearance: none;
 	/*appearance: none; probably not needed */
-	width: 30px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
-	background-image: url("images/raindrop.png");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
 	background-size: cover;
 } 
 
@@ -241,5 +241,10 @@ body {
 }
 
 .fas {
-	font-size: 19px;
+	height: 18px;
+	width: 18px;
+	font-size: 17.5px;
+
+	/* we need both height/width and font-size in order to both align the icons and keep the 
+	icons the same size as the speaker/mute icons*/
 }
