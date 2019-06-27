@@ -11,10 +11,13 @@
 			<meta charset="UTF-8">
 			<title> Serenity </title>
 
-			<link rel="stylesheet" type="text/css" href="index.css">
+			<link rel="stylesheet" href="index.css" type="text/css">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-			<link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
-			<link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+			<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great Vibes'>
+			<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps'>
+			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+			<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 			<script type="text/javascript" src="pauseButton.js" defer>
 			</script>
 			<script type="text/javascript" src="muteButton.js" defer>
@@ -23,6 +26,7 @@
 			</script>
 			<script type="text/javascript" src="collapsibleButton.js" defer>
 			</script>
+
 		</head>
 
 	<body>
@@ -53,7 +57,7 @@
 			</audio>
 			<audio loop id="forest_sound" src="sounds/forest.mp3" preload="auto">
 			</audio>
-			<audio loop id="fire_sound" src="sounds/fire.mp3" preload="auto">
+			<audio loop id="fire_sound" src="sounds/fire.wav" preload="auto"> <!-- Original source of sound: https://freesound.org/people/AJ170193/sounds/408531/ -->
 			</audio>
 				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
 				 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
