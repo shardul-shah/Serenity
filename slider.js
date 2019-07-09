@@ -20,6 +20,17 @@ function adjustVolume(newSliderValue, soundType) {
 
 	}
 
+	else if (soundType == "ocean") {
+		ocean_sound.volume = newSliderValue/100;
+		ocean_volume = ocean_sound.volume;
+
+		if (ocean_mute_icon.getAttribute('src') == "images/mute_icon.png") //if sound is muted (volume = 0)
+			ocean_mute_icon.src = "images/speaker_icon.png";
+
+		if (ocean_sound.volume == 0)
+			ocean_mute_icon.src = "images/mute_icon.png";	
+	}
+
 	else if (soundType == "forest") {
 		forest_sound.volume = newSliderValue/100;
 		forest_volume = forest_sound.volume;

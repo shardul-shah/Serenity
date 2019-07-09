@@ -6,13 +6,15 @@ var wind_mute_icon = document.getElementById("wind_mute_icon");
 var fire_mute_icon = document.getElementById("fire_mute_icon");
 var thunder_mute_icon = document.getElementById("thunder_mute_icon");
 var master_mute_icon = document.getElementById("master_mute_icon");
+var ocean_mute_icon = document.getElementById("ocean_mute_icon");
 
 //Sliders
-var rain_slider = document.getElementById('rain_slider');
-var forest_slider = document.getElementById('forest_slider');
-var wind_slider = document.getElementById('wind_slider');
-var fire_slider = document.getElementById('fire_slider');
-var thunder_slider = document.getElementById('thunder_slider');
+var rain_slider = document.getElementById("rain_slider");
+var forest_slider = document.getElementById("forest_slider");
+var wind_slider = document.getElementById("wind_slider");
+var fire_slider = document.getElementById("fire_slider");
+var thunder_slider = document.getElementById("thunder_slider");
+var ocean_slider = document.getElementById("ocean_slider");
 
 //Sounds and sound array in HTML script
 
@@ -22,10 +24,11 @@ var forest_volume = forest_sound.volume;
 var wind_volume = wind_sound.volume;
 var fire_volume = fire_sound.volume;
 var thunder_volume = thunder_sound.volume;
+var ocean_volume = ocean_sound.volume;
 
-var volumes = [rain_volume, forest_volume, wind_volume, fire_volume, thunder_volume];
-var mute_icons = [rain_mute_icon, forest_mute_icon, wind_mute_icon, fire_mute_icon, thunder_mute_icon, master_mute_icon];
-var sliders = [rain_slider, forest_slider, wind_slider, fire_slider, thunder_slider];
+var volumes = [rain_volume, forest_volume, wind_volume, fire_volume, thunder_volume, ocean_volume];
+var mute_icons = [rain_mute_icon, forest_mute_icon, wind_mute_icon, fire_mute_icon, thunder_mute_icon, master_mute_icon, ocean_mute_iconn];
+var sliders = [rain_slider, forest_slider, wind_slider, fire_slider, thunder_slider, ocean_slider];
 
 function toggleMute(soundType) {
 	// if sound is currently playing (and thus mute icon is being displayed), and the mute icon is clicked
@@ -79,6 +82,29 @@ function toggleMute(soundType) {
 			rain_mute_icon.src = "images/speaker_icon.png";	
 			rain_sound.volume = rain_volume;
 			rain_slider.value = rain_volume*100;
+		}
+	}
+
+	else if (soundType == "ocean") {
+		// if ocean sound is currently playing and the speaker icon is clicked... 
+		if (ocean_mute_icon.getAttribute('src') == "images/speaker_icon.png") {
+			ocean_mute_icon.src = "images/mute_icon.png";
+			ocean_sound.volume = 0;
+			ocean_slider.value = 0;
+		}
+
+		//case of slider manually being put to 0 and then sound being unmuted
+		else if (ocean_mute_icon.getAttribute('src') == "images/mute_icon.png" && ocean_volume == 0) {
+			ocean_mute_icon.src = "images/speaker_icon.png";
+			ocean_sound.volume = 0.01;
+			ocean_slider.value = 1;
+			ocean_volume = ocean_sound.volume;
+		}
+
+		else {
+			ocean_mute_icon.src = "images/speaker_icon.png";	
+			ocean_sound.volume = ocean_volume;
+			ocean_slider.value = ocean_volume*100;
 		}
 	}
 

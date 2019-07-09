@@ -236,7 +236,7 @@ body {
   display: none;
 }
 
-#rain_slider, #forest_slider, #fire_slider, #wind_slider, #thunder_slider {
+.slider {
 	width: 25%;
 }
 

@@ -26,14 +26,12 @@
 			</script>
 			<script type="text/javascript" src="collapsibleButton.js" defer>
 			</script>
-
 		</head>
 
 	<body>
 		<ul id="nav_bar">
-  			<li><a href="default.asp">Home</a></li>
   			<li><a href="news.asp">About</a></li>
- 			<li><a href="contact.asp">News</a></li>
+ 			<li><a href="contact.asp">Social Media</a></li>
   			<li><a href="about.asp">Contact</a></li>
 		</ul>
 		<div class="container_vertical" id="main_title_div">
@@ -57,9 +55,12 @@
 			</audio>
 			<audio loop id="forest_sound" src="sounds/forest.mp3" preload="auto">
 			</audio>
-			<audio loop id="fire_sound" src="sounds/fire.wav" preload="auto"> <!-- Original source of sound: https://freesound.org/people/AJ170193/sounds/408531/ -->
+			<audio loop id="fire_sound" src="sounds/fire.wav" preload="auto"> <!-- Original source of sound & credit to: https://freesound.org/people/AJ170193/sounds/408531/ (no changes made) -->
 			</audio>
-				<!-- The below script is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
+			<audio loop id="ocean_sound" src="sounds/ocean.wav" preload="auto"> <!-- Original source of sound & credit to:
+			https://freesound.org/people/tripplexis/sounds/320949/ (no changes made)-->
+			</audio> 
+				<!-- The below <script> is neccesary, in order to initialize the audio volume as 0.5 (50%), something I want  
 				 Browsers by default initialize audio and video volume as 1.0 (100%) volume. 
 				 I also cannot call the adjustVolume function here, as I want my JS to not run until the HTML has loaded (defer). 
 				 -->
@@ -71,8 +72,9 @@
 					var wind_sound = document.getElementById("wind_sound");
 					var fire_sound = document.getElementById("fire_sound");
 					var thunder_sound = document.getElementById("thunder_sound");
+					var ocean_sound = document.getElementById("ocean_sound");
 
-					var sounds = [rain_sound, forest_sound, wind_sound, fire_sound, thunder_sound];
+					var sounds = [rain_sound, forest_sound, wind_sound, fire_sound, thunder_sound, ocean_sound];
 
 					for (var i = 0; i < sounds.length; i++)
 						sounds[i].volume = 0.5;
@@ -119,6 +121,13 @@
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
+  					</div>
+
+  					<div class="container_horizontal" id="slider_div">
+  						<i class="fas fa-water">
+  						</i> 
+  						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="ocean_mute_icon" onclick="toggleMute(&quot;ocean&quot;)">
+  							<input type="range" min="0" max="100" value="50" class="slider" id="ocean_slider" oninput="adjustVolume(this.value, &quot;ocean&quot;)" onchange="adjustVolume(this.value, &quot;ocean&quot;)">
   					</div>
 				</div>
 		<div class="wave">

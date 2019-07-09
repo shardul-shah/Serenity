@@ -5,13 +5,14 @@ function togglePlay() {
 	// so whether or not the sound is paused or playing depends on audio's state AFTER the latest click in the DOM
 
 	// sound is about to be paused->played, so display pause button & play sound
-	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
 		displayPauseButton();
 		rain_sound.play();
 		forest_sound.play();
 		wind_sound.play();
 		fire_sound.play()
 		thunder_sound.play();
+		ocean_sound.play();
 	}
 
 	// sound is about to be played ->paused, so display play button & pause sound
@@ -22,13 +23,14 @@ function togglePlay() {
 		wind_sound.pause();
 		fire_sound.pause()
 		thunder_sound.pause();
+		ocean_sound.pause();
 	}
 };
 
 function mouseOverEffect() {
 
 	// sound is currently paused, so display the hover style for play button
-	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
 		toggle_btn.style.borderColor = "transparent transparent transparent #FF0041";
 		toggle_btn.style.opacity = 1;
 	}
@@ -44,7 +46,7 @@ function mouseOverEffect() {
 function mouseOutEffect() {
 
 	//sound is currently paused, and mouse is not hovered over button, so display default play button style
-	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused) {
+	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
 		toggle_btn.style.borderColor = "transparent transparent transparent #F45C82";
 		toggle_btn.style.opacity = 0.5; 
 	}
