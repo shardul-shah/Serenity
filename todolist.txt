@@ -22,4 +22,6 @@ TODO #11: Maybe change arrays into dictionaries for clarity in code, and actuall
 
 TODO #12: Change all event handler functions of JS into 1 file and structure them in order of appearance in HTML.
 
-TODO #13: 
+TODO #13: Muting at volume = 0 and unmuting it just 
+
+TODO #14: how to make #inverse_wave like the one in my codepen: https://codepen.io/anon/pen/orQqEp ; that is, remove scalex(-1) and keep still allow the 2 waves to be symmeterical to each other
