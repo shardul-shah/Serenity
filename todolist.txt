@@ -27,3 +27,12 @@ TODO #13: Muting at volume = 0 and unmuting it just
 TODO #14: how to make #inverse_wave like the one in my codepen: https://codepen.io/anon/pen/orQqEp ; that is, remove scalex(-1) and keep still allow the 2 waves to be symmeterical to each other
 
 TODO #15: How to fix ocean font-awesome positoning (too close to slider, not sure how to fix - others are fine)
+
+TODO #16: Difference between my current <a> top button ^ and this: HTML: <a href="#" id="to_top" onclick="scrollTop()"> JS: 
+function scrollTop() {
+	document.body.scrollTop = 0; // For Safari
+ 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+?
+
+TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter.

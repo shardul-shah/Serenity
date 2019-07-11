@@ -27,7 +27,7 @@ var thunder_volume = thunder_sound.volume;
 var ocean_volume = ocean_sound.volume;
 
 var volumes = [rain_volume, forest_volume, wind_volume, fire_volume, thunder_volume, ocean_volume];
-var mute_icons = [rain_mute_icon, forest_mute_icon, wind_mute_icon, fire_mute_icon, thunder_mute_icon, master_mute_icon, ocean_mute_iconn];
+var mute_icons = [rain_mute_icon, forest_mute_icon, wind_mute_icon, fire_mute_icon, thunder_mute_icon, master_mute_icon, ocean_mute_icon];
 var sliders = [rain_slider, forest_slider, wind_slider, fire_slider, thunder_slider, ocean_slider];
 
 function toggleMute(soundType) {

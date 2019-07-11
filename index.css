@@ -313,3 +313,44 @@ body {
 	transform: rotate(180deg) scalex(-1);
 }
 
+#to_top {
+	position: fixed;
+	background: black;
+	opacity: 0.0;
+	text-decoration: none;
+	-webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    width: 30px;
+    height: 30px;
+    /* edit this
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    */
+}
+
+#to_top i {
+    color: white;
+    margin: 0;
+    position: relative;
+    left: 6px;
+    top: 3px;
+    font-size: 19px;
+    /* edit this
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    */
+}
+#to_top:hover {
+    background: green;
+}
+#to_top:hover i {
+    color: purple;
+    top: 5px;
+}
