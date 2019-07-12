@@ -67,6 +67,13 @@ body {
 	/* flex-direction is row by default */	
 }
 
+.right_align_horizontal {
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: flex-end;*/
+	justify-content: flex-end;
+	border: black 2px solid;
+}
 
 #main_title_div {
 	height: 14vh;
@@ -279,36 +286,6 @@ body {
   background-image: radial-gradient(circle at 10px 15px, #F45C82 12px, transparent 13px);
 }
 
-.wave_inverse {
-	background: transparent;
-  	height: 50px;
-  	position: relative;
-}
-
-.wave::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	background-repeat: repeat-x;
-	height: 10px;
-	background-size: 20px 20px; 
-	background-image: radial-gradient(circle at 10px -5px, transparent 12px, #F45C82 13px);
-  }
-
-.wave::after {
-	content: "";
-  	position: absolute;
-  	left: 0;
-  	bottom: 0;
-  	right: 0;
-  	background-repeat: repeat-x;
-  	height: 15px;
-  	background-size: 40px 20px;
-  	background-image: radial-gradient(circle at 10px 15px, #F45C82 12px, transparent 13px);
-}
-
 #inverse_wave {
 	transform: rotate(180deg) scalex(-1);
 }
@@ -330,6 +307,7 @@ body {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     */
+    z-index: 1;
 }
 
 #to_top i {
@@ -346,11 +324,31 @@ body {
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     */
-}
+    z-index: 1;
+}	
 #to_top:hover {
     background: green;
 }
 #to_top:hover i {
     color: purple;
     top: 5px;
+}
+
+.fab {
+
+}
+
+.link {
+	display: block;
+	font-size: 50px;
+	color: red;
+	padding: 20px;
+	/*border: 1px solid black;*/
+	margin-left: 15px;
+	transition: 0.75s; /* how much time it takes to turn back to "normal"*/
+}
+
+.link:hover {
+	color: blue;
+	transition: 0s; /*how much time it takes to turn into this at hover (transition 0s = instant)
 }

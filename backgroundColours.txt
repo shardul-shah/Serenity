@@ -1,0 +1,9 @@
+Background Colors:
+
+Rain: #696969 + #87CEFA = #789cb2
+Forest: #228B22
+Wind: #C0C0C0
+Fire: #FFA500
+Lightning: #FFFF00
+Ocean: #48D1CC	
+

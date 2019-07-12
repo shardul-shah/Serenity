@@ -36,3 +36,4 @@ function scrollTop() {
 ?
 
 TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter.
+
