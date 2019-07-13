@@ -1,9 +1,9 @@
 Background Colors:
 
-Rain: #696969 + #87CEFA = #789cb2
-Forest: #228B22
-Wind: #C0C0C0
-Fire: #FFA500
-Lightning: #FFFF00
-Ocean: #48D1CC	
+Rain: mix(#696969,#87CEFA) = #789cb2 RGBA: rgba(120,156,178, 1)
+Forest: #228B22 RGBA: rgba(34,139,34, 0.5)
+Wind: #708090  RGBA: rgba(112,128,144, 0.5)
+Fire: #FFA500 RGBA: rgba(255,165,0, 0.5)
+Lightning: #FFFF00 RGBA: rgba(255,255,0, 0.5)
+Ocean: #48D1CC RGBA: rgba(72,209,204, 0.5)
 

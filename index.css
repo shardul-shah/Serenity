@@ -47,9 +47,37 @@ body {
 	/* 
 	background-image: url("images/forest_rain.jpg");
 	background-size: cover;
-	*/
 	background-color: #accbe1;
+	*/
+
+	/* animation via keyframes */
+	animation: colourtransition 120s infinite alternate;
+	 -webkit-animation: colourtransition 120s infinite alternate;
 }
+
+@keyframes colourtransition 
+	{	
+		0%  {background: rgba(112,128,144, 0.5);}
+		20%   {background: rgba(120,156,178, 1);}
+		40% {background: rgba(72,209,204, 0.5);}
+      	60%  {background: rgba(34,139,34, 0.5);}
+      	80%  {background: rgba(255,165,0, 0.5);}
+      	100%  {background: rgba(255,255,0, 0.5);}
+      	 		
+	}
+
+	rgba(112,128,144, 0.2)
+
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+	{
+		0%  {background: rgba(112,128,144, 0.5);}
+		20%   {background: rgba(120,156,178, 1);}
+		40% {background: rgba(72,209,204, 0.5);}
+      	60%  {background: rgba(34,139,34, 0.5);}
+      	80%  {background: rgba(255,165,0, 0.5);}
+      	100%  {background: rgba(255,255,0, 0.5);}
+    }
 
 .container_vertical {
 	display: flex;
@@ -95,6 +123,16 @@ body {
  
 }
 
+.secondary_title {
+	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
+ 	color: #F45C82;
+ 	text-transform: none; 
+ 	font-weight: bolder;
+ 	font-size: 4vmax; 
+ 	letter-spacing: 0.21vw;
+ 	margin-bottom: -10px;
+}
+
 #app_description {
 	font-family: Bilbo Swash Caps, Great Vibes, Times New Roman, Georgia, serif;
  	color: #F45C82;
@@ -104,6 +142,17 @@ body {
  	letter-spacing: 0.07vw;
  	text-align: center;
  	line-height: 1.6; /* recommended line-height (only applies to mobile views of my website) */
+}
+
+.other_descriptions {
+	font-family: IBM Plex, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+ 	color: #F45C82;
+ 	text-transform: none; 
+ 	font-weight: bolder;
+ 	font-size: 1.43vmax; 
+ 	letter-spacing: 0.07vw;
+ 	text-align: center;
+ 	line-height: 1.6; /* recommended line-height (only applies to mobile views of my website) */	
 }
 
 /* by default, the play/pause button is displayed as play, as audio is paused */
@@ -352,4 +401,5 @@ body {
 	color: blue;
 	transition: 0s; /*how much time it takes to turn into this at hover (transition 0s = instant) */
 }
+
 
