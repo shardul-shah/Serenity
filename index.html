@@ -90,7 +90,7 @@
 		</div>
 				<div class="container_vertical" id="collapsed_div">
 					<div class="container_horizontal" id="slider_div">
-						<i class="fas fa-cloud-rain">
+						<i class="fas fa-cloud-rain slider_icons">
 						</i> 
 						<!-- observe that these icons act as a button, even though their elements are img -->
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
@@ -98,35 +98,35 @@
   					</div>
 
   					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-tree"> 
+  						<i class="fas fa-tree slider_icons"> 
   						</i> 
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 
   	  				<div class="container_horizontal" id="slider_div">
-  	  					<i class="fas fa-wind"> 
+  	  					<i class="fas fa-wind slider_icons"> 
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
   					</div>
 
   	  				<div class="container_horizontal" id="slider_div">
-  	  					<i class="fas fa-fire">
+  	  					<i class="fas fa-fire slider_icons">
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
   					</div>
 
   					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-bolt">
+  						<i class="fas fa-bolt slider_icons">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
   					</div>
 
   					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-water">
+  						<i class="fas fa-water slider_icons">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="ocean_mute_icon" onclick="toggleMute(&quot;ocean&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="ocean_slider" oninput="adjustVolume(this.value, &quot;ocean&quot;)" onchange="adjustVolume(this.value, &quot;ocean&quot;)">
@@ -148,9 +148,9 @@
 		</div>
 		<div class="right_align_horizontal">
 			<a href="javascript:;" id="to_top" onclick="scrollToTop()"> <!-- put to the right later? -->
-				<i class="fas fa-chevron-up">	
+				<i class="fas fa-chevron-up">
 				</i>
-			</a>
+			</a>	
 		</div>
 		<div class="wave">
 		</div>
@@ -165,6 +165,20 @@
 			<p class="other_descriptions">
 			Contact me.
 			</p>
+			<nav class="container_horizontal">
+				<a href="mailto:shardul@ualberta.ca" target="_blank" class="link">
+					<i class="fas fa-envelope">
+					</i>
+				</a>
+				<a href="https://github.com/shardul-shah" target="_blank" class="link">
+					<i class="fab fa-github">
+					</i>
+				</a>
+				<a href="https://facebook.com" target="_blank" class="link">
+					<i class="fas fa-envelope">
+					</i>
+				</a>
+			</nav>
 		</div>
 		<div class="wave">
 		</div>
@@ -179,20 +193,20 @@
 			<p class="other_descriptions">
 			Feel free to share or connect with any of the social media of Serenity below.
 			</p>
-		<nav class="container_horizontal">
-			<a href="https://facebook.com" class="link">
-				<i class="fab fa-facebook">
-				</i>
-			</a>
-			<a href="https://instagram.com" class="link">
-				<i class="fab fa-instagram">
-				</i>
-			</a>
-			<a href="https://twitter.com" class="link">
-				<i class="fab fa-twitter">
-				</i>
-			</a>
-		</nav>
+			<nav class="container_horizontal">
+				<a href="https://facebook.com" target="_blank" class="link">
+					<i class="fab fa-facebook">
+					</i>
+				</a>
+				<a href="https://instagram.com" target="_blank" class="link">
+					<i class="fab fa-instagram">
+					</i>
+				</a>
+				<a href="https://twitter.com"target="_blank" class="link">
+					<i class="fab fa-twitter">
+					</i>
+				</a>
+			</nav>
 		</div>
 		<div class="wave">
 		</div>
