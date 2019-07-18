@@ -52,11 +52,12 @@ body {
 	background-size: cover;
 	background-color: #accbe1;
 	*/
-
 	/* animation via keyframes */
+
 	animation: colourtransition 120s infinite alternate; /* for Opera and Mozilla */ 
 	 -webkit-animation: colourtransition 120s infinite alternate; /*for Safari and Chrome */
 }
+
 
 @keyframes colourtransition 
 	{	
@@ -239,7 +240,6 @@ body {
 	background-size: cover;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) { @font-face { font-family:'FontAwesome'; src: url('fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg'); } }
 
 /* CSS for slider-thumb/icon, for Mozilla */
 .slider::-moz-slider-thumb {
@@ -413,4 +413,9 @@ body {
 	transition: 0s; /*how much time it takes to turn into this at hover (transition 0s = instant) */
 }
 
-
+.footer {
+	background-color: #F45C82;
+	height: 30px;
+	width: 100%;
+	
+}
