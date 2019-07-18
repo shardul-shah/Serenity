@@ -1,9 +1,6 @@
 var collapsible_btn = document.getElementById("collapsible");
 var collapsed_div = document.getElementById("collapsed_div"); 
 
-collapsible_btn.addEventListener("hover", displayGlowEffect);
-
-
 function toggleCollapsible() {
 	if (window.getComputedStyle(collapsed_div).display == "none") {
 
