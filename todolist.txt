@@ -37,3 +37,11 @@ function scrollTop() {
 
 TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter.
 
+TODO #18: Should I make it so there is no gap between the nav bar and footer and the top/bottom respectively? If so, how can I do it?
+
+TODO #19: How to make the Copyright and Privacy Policy go one below each other?
+
+TODO #20: Add Fun Facts regarding relaxation, focus, elements, etc. etc. etc. A real FUTURE TODO.
+
+TODO #21: make everything compatible on all devices (e.g. phone) and all OS (e.g. Mac, Windows)
+

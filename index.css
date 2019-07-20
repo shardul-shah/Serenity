@@ -365,6 +365,7 @@ body {
     */
     z-index: 1;
    	right: 30px;
+   	bottom: 100px; /* ok so wtf happened here ??? FIGURE OUT */ FIXME
    	transition: all 0.5s;
 }
 
@@ -413,9 +414,56 @@ body {
 	transition: 0s; /*how much time it takes to turn into this at hover (transition 0s = instant) */
 }
 
-.footer {
+footer {
 	background-color: #F45C82;
-	height: 30px;
+	height: 60px;
 	width: 100%;
+	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+ 	color: black;
+ 	text-transform: none; 
+ 	font-weight: none;
+ 	font-size: 1.00vmax; 
+ 	letter-spacing: 0vw;
+}
+
+.bullet_pt_style {
+	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+ 	color: #F45C82;
+ 	text-transform: none; 
+ 	font-weight: bolder;
+ 	font-size: 1.20vmax; 
+ 	letter-spacing: 0.06vw;
+ 	text-align: center;
+ 	line-height: 1.6; /* recommended line-height (only applies to mobile views of my website) */
+ 	margin: 0px;
+ 	padding: 0px;	
+ 	list-style-type: none;
+}
+
+.fa-tint {
+	font-size: 14px;
+	margin-right: 6px;
+}
+
+/* FIX ME Change footer_links colors when you are changing the color scheme of your page*/
+.footer_links {
+	text-decoration: none;
+	transition: 2s;
+	color: rgba(0,0,153,0.5);
+}
+
+.footer_links:visited {
+	transition: 1s;
+	color: rgba(211,211,46,1.0);
 	
+}
+
+.footer_links:hover {
+	transition: 0s;
+	color: rgba(0,0,153,1);
+}
+
+.footer_links:active {
+	transition: 0s;
+	color: rgba(255,255,0,1);
 }
