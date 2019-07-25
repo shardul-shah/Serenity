@@ -8,8 +8,7 @@ function vh(value) {
 window.addEventListener("scroll", displayScrollBtn);
 
 function displayScrollBtn() {
-	if (document.body.scrollTop > vh(20) || document.documentElement.scrollTop > vh(20)) {
-		to_top.style.display = "flex";
+	if (document.body.scrollTop > vh(7) || document.documentElement.scrollTop > vh(7)) {
 		to_top.style.transition = "opacity 2s";
 		console.log("X"+document.documentElement.scrollTop);
 		to_top.style.opacity = "1";
@@ -17,11 +16,12 @@ function displayScrollBtn() {
 	}
 
 	else {
+		to_top.style.opacity = "0";
 		to_top.style.transition = "opacity 2s";
 		console.log("Y"+document.body.scrollTop);
-		to_top.style.opacity = "0";
-		//setTimeout(sample, 4000); // very buggy - how do I delay this properly?
+		//timeout = setTimeout(sample, 2500); // very buggy - how do I delay this properly? FIXME KEYFRAMES is the solution
 
+		
 	}
 };
 

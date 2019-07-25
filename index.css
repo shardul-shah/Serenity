@@ -191,7 +191,7 @@ body {
 	 outline: none;
 	 opacity: 0.5; /* default opacity without hover */
 	 /*FIXME don't think webkit-transition & transition do anything here, maybe fix */
-	 -webkit-transition: opacity 0.3s, background-color 0.3s; /* for safari*/
+	 -webkit-transition: opacity 0.6s, background-color 0.6s; /* for safari*/
 	 transition: opacity 0.3s, background-color: 0.3s; /* for other browsers */
 	 background-color: #F45C82; /* default BG colour without hover */
 	 border-radius: 7px;
@@ -372,7 +372,7 @@ body {
     */
     z-index: 1;
    	right: 30px;
-   	bottom: 100px;
+   	bottom: 125px;
    	transition: all 0.5s;
 }
 
