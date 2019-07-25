@@ -70,8 +70,8 @@ body {
       	 		
 	}
 
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+ /*Safari and Chrome - necessary duplicate */
+@-webkit-keyframes colourtransition
 	{
 		0%  {background: rgba(112,128,144, 0.5);}
 		20%   {background: rgba(120,156,178, 0.75);}
@@ -307,6 +307,7 @@ body {
 	height: 18px;
 	width: 18px;
 	font-size: 17.5px;
+	margin-right: 5px;
 
 	/* we need both height/width and font-size in order to both align the icons and keep the 
 	icons the same size as the speaker/mute icons*/
@@ -467,3 +468,12 @@ footer {
 	transition: 0s;
 	color: rgba(255,255,0,1);
 }
+
+#copyright_date {
+  display: inline;
+}
+
+#privacy_policy {
+	margin-top: 5px;
+}
+
