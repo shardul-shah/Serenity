@@ -1,3 +1,9 @@
+html, body {
+	margin: 0px;
+   	padding: 0px;
+   	height: 100%;
+}
+
 /* for large screens; if screen_width >= 800 pixels */
 
 #nav_bar {
@@ -344,7 +350,7 @@ body {
 }
 
 #inverse_wave {
-	transform: rotate(180deg) scalex(-1);
+	transform: rotate(180deg);
 }
 
 #to_top {
@@ -366,7 +372,7 @@ body {
     */
     z-index: 1;
    	right: 30px;
-   	bottom: 100px; /* ok so wtf happened here ??? FIGURE OUT */ FIXME
+   	bottom: 100px;
    	transition: all 0.5s;
 }
 
@@ -395,10 +401,6 @@ body {
     color: rgba(255, 255, 255, 1);
     top: 3px;
     transition: all 0s;
-}
-
-.fab {
-
 }
 
 .link {
