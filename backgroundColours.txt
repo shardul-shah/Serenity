@@ -1,4 +1,4 @@
-Background Colors:
+Background Colors cycling on website follow a specific theme:
 
 Rain: mix(#696969,#87CEFA) = #789cb2 RGBA: rgba(120,156,178, 1)
 Forest: #228B22 RGBA: rgba(34,139,34, 0.5)

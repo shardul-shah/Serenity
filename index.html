@@ -1,39 +1,43 @@
-<!DOCTYPE html>
-	<html lang="en">
-		<head>
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="author" content="Shardul Shah">
-			<meta name="keywords" content="Background noise, rain sounds, forest sounds, bird sounds, lightning sounds,
-			sound, sounds, lightning, rain, forest, birds, peace, SERENITY, ASMR, relax, relaxation, relaxing, study music
-			, work music, focus music, focus, study, relax, web application, rain sound, forest sound, bird sound">
-			<meta name="description" content="SERENITY is a free application to help you relax and focus, whether it is for work, sleep, studying, or other purposes.">
-			<meta name="application-name" content="SERENITY">
-			<meta charset="UTF-8">
-			<title> Serenity </title>
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Shardul Shah">
+		<meta name="keywords" content="Background noise, rain sounds, forest sounds, bird sounds, lightning sounds,
+		sound, sounds, lightning, rain, forest, birds, peace, SERENITY, ASMR, relax, relaxation, relaxing, study music
+		, work music, focus music, focus, study, relax, web application, rain sound, forest sound, bird sound">
+		<meta name="description" content="SERENITY is a free application to help you relax and focus, whether it is for work, sleep, studying, or other purposes.">
+		<meta name="application-name" content="SERENITY">
 
-			<link rel="stylesheet" href="index.css" type="text/css">
-			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-			<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great Vibes'>
-			<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps'>
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-			<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
-			<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-			<link rel="icon" href="images/favicon.ico" type="image/x-icon">
-			<!-- FIXME use https://www.flaticon.com/free-icon/river_284469 if you are changing favicon img -->
+		<title> 
+		Serenity
+		 </title>
 
-			<script type="text/javascript" src="muteButton.js" defer>
-			</script>
-			<script type="text/javascript" src="pauseButton.js" defer>
-			</script>
-			<script type="text/javascript" src="slider.js" defer>
-			</script>
-			<script type="text/javascript" src="collapsibleButton.js" defer>
-			</script>
-			<script type="text/javascript" src="windowScroll.js" defer>
-			</script>
-			<script type="text/javascript" src="copyrightAutoUpdate.js" defer>
-			</script>
-		</head>
+		<link rel="stylesheet" href="index.css" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Great Vibes'>
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps'>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap">
+		<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato'>
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+		<!-- FIXME use https://www.flaticon.com/free-icon/river_284469 if you are changing favicon img -->
+
+		<script type="text/javascript" src="muteButton.js" defer>
+		</script>
+		<script type="text/javascript" src="pauseButton.js" defer>
+		</script>
+		<script type="text/javascript" src="slider.js" defer>
+		</script>
+		<script type="text/javascript" src="collapsibleButton.js" defer>
+		</script>
+		<script type="text/javascript" src="windowScroll.js" defer>
+		</script>
+		<script type="text/javascript" src="copyrightAutoUpdate.js" defer>
+		</script>
+	</head>
 
 	<body>
 		<nav>
@@ -96,44 +100,44 @@
 			<button id="collapsible" onclick="toggleCollapsible()">Control Specific Sound Types</button>
 		</div>
 				<div class="container_vertical" id="collapsed_div">
-					<div class="container_horizontal" id="slider_div">
-						<i class="fas fa-cloud-rain slider_icons" alt="Rain Icon" title="Rain">
+					<div class="container_horizontal slider_div">
+						<i class="fas fa-cloud-rain slider_icons" title="Rain">
 						</i> 
 						<!-- observe that these icons act as a button, even though their elements are img -->
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
   					</div>
 
-  					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-tree slider_icons"> 
+  					<div class="container_horizontal slider_div">
+  						<i class="fas fa-tree slider_icons" title="Forest"> 
   						</i> 
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 
-  	  				<div class="container_horizontal" id="slider_div">
-  	  					<i class="fas fa-wind slider_icons"> 
+  	  				<div class="container_horizontal slider_div">
+  	  					<i class="fas fa-wind slider_icons" title="Wind"> 
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
   					</div>
 
-  	  				<div class="container_horizontal" id="slider_div">
-  	  					<i class="fas fa-fire slider_icons">
+  	  				<div class="container_horizontal slider_div">
+  	  					<i class="fas fa-fire slider_icons" title="Fire">
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
   					</div>
 
-  					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-bolt slider_icons">
+  					<div class="container_horizontal slider_div">
+  						<i class="fas fa-bolt slider_icons" title="Thunder">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
   					</div>
 
-  					<div class="container_horizontal" id="slider_div">
-  						<i class="fas fa-water slider_icons">
+  					<div class="container_horizontal slider_div">
+  						<i class="fas fa-water slider_icons" title="Ocean">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="ocean_mute_icon" onclick="toggleMute(&quot;ocean&quot;)">
   							<input type="range" min="0" max="100" value="50" class="slider" id="ocean_slider" oninput="adjustVolume(this.value, &quot;ocean&quot;)" onchange="adjustVolume(this.value, &quot;ocean&quot;)">
@@ -141,7 +145,7 @@
 				</div>
 		<div class="wave">
 		</div>
-		<div class="wave" id="inverse_wave">
+		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical" id="contact">
 			<h1 class="secondary_title"> 
@@ -165,7 +169,7 @@
 		</div>
 		<div class="wave">
 		</div>
-		<div class="wave" id="inverse_wave">
+		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical" id="about">
 			<h1 class="secondary_title"> 
@@ -196,7 +200,7 @@
 		</div>
 		<div class="wave">
 		</div>
-		<div class="wave" id="inverse_wave">
+		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical" id="social_media">
 			<h1 class="secondary_title"> 
@@ -216,7 +220,7 @@
 					<i class="fab fa-instagram">
 					</i>
 				</a>
-				<a href="https://twitter.com"target="_blank" class="link">
+				<a href="https://twitter.com" target="_blank" class="link">
 					<i class="fab fa-twitter">
 					</i>
 				</a>
@@ -224,10 +228,11 @@
 		</div>
 		<div class="wave">
 		</div>
-		<div class="wave" id="inverse_wave">
+		<div class="wave inverse_wave">
 		</div>
 		<div class="right_align_horizontal">
-			<a href="javascript:;" id="to_top" onclick="scrollToTop()"> <!-- put to the right later? -->
+			<a href="javascript:;" id="to_top" onclick="scrollToTop()" title="Go To Top"> 
+				<!-- Note: instead of onclick="scrollToTop()", we can also simply do href="#" and only have JavaScript code for displaying/hiding the scrollToTop button. This makes the use of less JavaScript and relies on native HTML more. However there might be some issues with scrolling to top this way, which is why I am not using it.-->
 				<i class="fas fa-chevron-up">
 				</i>
 			</a>	
@@ -238,14 +243,14 @@
 				<div id="copyright_date"> 
 				2019
 				</div>
-				<a class="footer_links" href="https://shardul-shah.github.io/Serenity/"> 
+				<a class="footer_links" href="https://shardul-shah.github.io/Serenity/" target="_blank"> 
 			https://shardul-shah.github.io/Serenity/ 
 				</a> 
 			</div>
 			<div id="privacy_policy">
-				<a class="footer_links" href="https://www.termsfeed.com/privacy-policy/8d4cc5d3921a7915026f439063b7357e"> Privacy Policy 
+				<a class="footer_links" href="https://www.termsfeed.com/privacy-policy/8d4cc5d3921a7915026f439063b7357e" target="_blank"> Privacy Policy 
 				</a> 
-		</div>
+			</div>
 		</footer>
-
 	</body>
+</html>

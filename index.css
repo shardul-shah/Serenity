@@ -263,7 +263,7 @@ body {
 	width: 25px;
 }
 
-#slider_div {
+.slider_div {
 	height: 50px;
 	width: 100%;
 }
@@ -348,7 +348,7 @@ body {
   background-image: radial-gradient(circle at 10px 15px, rgba(183,0,0,1) 12px, transparent 13px);
 }
 
-#inverse_wave {
+.inverse_wave {
 	transform: rotate(180deg);
 }
 

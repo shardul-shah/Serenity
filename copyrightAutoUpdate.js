@@ -6,4 +6,4 @@ function updateCopyrightYear()
 	var today = new Date();
 	current_year = today.getFullYear();
 	copyright_date.innerHTML = current_year;
-}
+};
