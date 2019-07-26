@@ -21,7 +21,8 @@ function scrollTop() {
 }
 ?
 
-TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter.
+TODO #17a: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter.
+TODO #17b: KEYFRAMES SOLN TO HIDING COLLAPSIBLE BTN
 
 
 TODO #20: Add Fun Facts regarding relaxation, focus, elements, etc. etc. etc. FUTURE TODO.
@@ -41,7 +42,12 @@ TODO #27: add keyframes to windowScroll.js to hide button after the user scrolls
 
 TODO #28: Change transition effects to be consistent (relatively) across the site (DONE)
 
-TODO #29: add transition all browsers (webkit-...)
 
 TODO #30: FIX CENTERING OF PAUSE/PLAY BUTTON
+
+TODO #31: ADD ALT AND TITLE to the main parts on the website
+
+TODO #32: Comment code
+
+TODO #33: Clean up code
 

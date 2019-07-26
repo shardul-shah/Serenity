@@ -20,7 +20,6 @@ function displayScrollBtn() {
 		to_top.style.transition = "opacity 2s";
 		console.log("Y"+document.body.scrollTop);
 		//timeout = setTimeout(sample, 2500); // very buggy - how do I delay this properly? FIXME KEYFRAMES is the solution
-
 		
 	}
 };
