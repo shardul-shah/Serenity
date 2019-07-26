@@ -26,11 +26,9 @@ function toggleCollapsible() {
 };
 
 function displayFadeEffect() {
-	collapsible_btn.style.opacity = 0.5;
-	collapsible_btn.style.backgroundColor = "#F45C82";
+	collapsible_btn.style.backgroundColor = "rgba(183, 0, 0, 1)";
 };
 
 function displayGlowEffect() {
-	collapsible_btn.style.opacity = 1;
-	collapsible_btn.style.backgroundColor = "#FF0041";
+	collapsible_btn.style.backgroundColor = "rgba(0,0,150,1)";
 };

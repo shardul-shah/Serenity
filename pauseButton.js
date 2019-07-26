@@ -31,15 +31,15 @@ function mouseOverEffect() {
 
 	// sound is currently paused, so display the hover style for play button
 	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
-		toggle_btn.style.borderColor = "transparent transparent transparent #FF0041";
-		toggle_btn.style.opacity = 1;
+		toggle_btn.style.borderColor = "transparent transparent transparent rgba(0,0,150,1)";
+		toggle_btn.style.transition = "border-color 0s";
 	}
 
 	// sound is currently playing, so display the hover style for pause button
 	else 
 	{	
-		toggle_btn.style.borderColor = "#FF0041";
-		toggle_btn.style.opacity = 1;
+		toggle_btn.style.borderColor = "rgba(0,0,150,1)";
+		toggle_btn.style.transition = "border-color 0s";
 	}
 }; 
 
@@ -47,14 +47,14 @@ function mouseOutEffect() {
 
 	//sound is currently paused, and mouse is not hovered over button, so display default play button style
 	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
-		toggle_btn.style.borderColor = "transparent transparent transparent #F45C82";
-		toggle_btn.style.opacity = 0.5; 
+		toggle_btn.style.borderColor = "transparent transparent transparent rgba(183,0,0,1)";
+		toggle_btn.style.transition = "border-color 1s";
 	}
 
 	//sound is currently playing, and mouse is not hovered over button, so display default pause button style
 	else {
-		toggle_btn.style.borderColor = "transparent transparent transparent #F45C82";
-		toggle_btn.style.opacity = 0.5;
+		toggle_btn.style.borderColor = "transparent transparent transparent rgba(183, 0, 0, 1)";
+		toggle_btn.style.transition = "border-color 1s";
 	}
 };
 
@@ -62,8 +62,7 @@ function mouseOutEffect() {
 function displayPauseButton() {
 	toggle_btn.style.borderStyle = "double";
 	toggle_btn.style.borderWidth = "0vmin 0vmin 0vmin 7vmin";
-	toggle_btn.style.borderColor = "transparent transparent transparent #F45C82";
-	toggle_btn.style.opacity = 0.5;
+	toggle_btn.style.borderColor = "transparent transparent transparent rgba(183, 0, 0, 1)";
 	toggle_btn.style.backgroundColor = "transparent";
 };
 
@@ -71,7 +70,6 @@ function displayPauseButton() {
 function displayPlayButton() {
 	toggle_btn.style.borderStyle = "solid";
 	toggle_btn.style.borderWidth = "7vmin 0vmin 7vmin 14vmin";
-	toggle_btn.style.borderColor = "transparent transparent transparent #F45C82";
-	toggle_btn.style.opacity = 0.5;
+	toggle_btn.style.borderColor = "transparent transparent transparent rgba(183, 0, 0, 1)";
 	toggle_btn.style.backgroundColor = "transparent";
 };

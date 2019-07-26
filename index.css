@@ -14,7 +14,7 @@ html, body {
   flex-wrap: wrap;
   /* flex-direction is row by default */
   justify-content: flex-start;
-  background-color: #F45C82;
+  background-color: rgba(183,0,0,1);
   overflow: hidden; /* FIXME what does this do? */  
 }
 
@@ -41,15 +41,18 @@ li  {
 #nav_bar li a /* all <a> nested inside <li> */ {
 	display: block;
 	padding: 11px; 
-	color: black;
+	color: rgba(255,255,0,1);
+	background-color: rgba(183,0,0,1);
 	text-decoration: none;
-	transition: 1s;
+	transition: background-color 0.75s;
+	-webkit-transition: background-color 0.75s;
 	font-family: IBM Plex Sans, Times New Roman, Georgia, serif;
 }
 
 #nav_bar li a:hover {
-	background-color: blue;
-	transition: 0s;
+	background-color: rgba(0,0,150,1);
+	transition: background-color 0s;
+	-webkit-transition: background-color 0s;
 }
 
 body {
@@ -123,7 +126,7 @@ body {
 
 #main_title {
 	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
- 	color: #F45C82;
+ 	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 7vmax; 
@@ -133,7 +136,7 @@ body {
 
 .secondary_title {
 	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
- 	color: #F45C82;
+ 	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 4vmax; 
@@ -143,7 +146,7 @@ body {
 
 #app_description {
 	font-family: Bilbo Swash Caps, Great Vibes, Times New Roman, Georgia, serif;
- 	color: #F45C82;
+ 	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 2.5vmax; 
@@ -154,7 +157,7 @@ body {
 
 .other_descriptions {
 	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
- 	color: #F45C82;
+ 	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 1.43vmax; 
@@ -172,11 +175,9 @@ body {
 	outline: none;
 	border-style: solid;
 	border-width: 7vmin 0vmin 7vmin 14vmin;
-	border-color: transparent transparent transparent #F45C82;
+	border-color: transparent transparent transparent rgba(183,0,0,1);
 	background-color: transparent;
-	opacity: 0.5;
 } 
-
 
 #play_pause_button_div {
 	height: 16.5vmin;
@@ -189,19 +190,18 @@ body {
 	 width: 20%; /* Full-width */
 	 height: 25px;
 	 outline: none;
-	 opacity: 0.5; /* default opacity without hover */
-	 /*FIXME don't think webkit-transition & transition do anything here, maybe fix */
-	 -webkit-transition: opacity 0.6s, background-color 0.6s; /* for safari*/
-	 transition: opacity 0.3s, background-color: 0.3s; /* for other browsers */
-	 background-color: #F45C82; /* default BG colour without hover */
+	 -webkit-transition: background-color 0.75s; /* for safari*/
+	 transition: background-color: 0.75s; /* for other browsers */
+	 background-color: rgba(183, 0, 0, 1); /* default BG colour without hover */
 	 border-radius: 7px;
 }
 
 
 /* fully show slider on hover (opacity: 0.6 -> 1) */
 .slider:hover {
-	opacity: 1;
-	background-color: #FF0041;
+	background-color: rgba(0,0,150,1);
+	-webkit-transition: background-color 0s; /* for safari*/
+	transition: background-color: 0s; /* for other browsers */
 } 
 
 /* Below is the code for having a non-image, vibrant slider thumb which glows on hover. Commented it out for now. Will see what to do with it in the future. /*
@@ -242,7 +242,7 @@ body {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
 	background-size: cover;
 }
 
@@ -271,32 +271,31 @@ body {
 
 #collapsible {
 	height: 30px;
-	opacity: 0.5; /* default opacity without hover */
-	-webkit-transition: opacity 0.5s, background-color 0.5s; /* for safari*/
-	transition: opacity 0.5s, background-color: 0.5s; /* for other browsers */
-	background-color: #F45C82; /* default BG colour without hover */
-  	color: black;
+	-webkit-transition: background-color 0.75s; /* for safari*/
+	transition: background-color: 0.75s; /* for other browsers */
+	background-color: rgba(183,0,0,1); /* default BG colour without hover */
+  	color: yellow;
   	cursor: pointer;
   	width: 30%;
   	border: none;
   	text-align: center;
   	outline: none;
   	font-size: 1.5vmax;
-  	font-family: Georgia;
+  	font-family: IBM Plex Sans, Times New Roman, Georgia, serif;
 
 } 
 
 #collapsible:hover {
-	opacity: 1 !important;
-	background-color: #FF0041 !important; 
+	background-color: rgba(0,0,150,1) !important; 
 	transition: all 0s !important;
+	-webkit-transition: all 0s !important;
 
 }
 
 #collapsible:active {
-	opacity: 1;
-	background-color: #FF0041;
+	background-color: rgba(0,0,150,1);
 	transition: all 0s;
+	-webkit-transition: all 0s;
 }
 
 #collapsed_div {
@@ -334,7 +333,7 @@ body {
   	background-repeat: repeat-x;
   	height: 10px;
   	background-size: 20px 20px; 
-  	background-image: radial-gradient(circle at 10px -5px, transparent 12px, #F45C82 13px);
+  	background-image: radial-gradient(circle at 10px -5px, transparent 12px, rgba(183,0,0,1) 13px);
   }
 
 .wave::after {
@@ -346,7 +345,7 @@ body {
   background-repeat: repeat-x;
   height: 15px;
   background-size: 40px 20px;
-  background-image: radial-gradient(circle at 10px 15px, #F45C82 12px, transparent 13px);
+  background-image: radial-gradient(circle at 10px 15px, rgba(183,0,0,1) 12px, transparent 13px);
 }
 
 #inverse_wave {
@@ -373,7 +372,8 @@ body {
     z-index: 1;
    	right: 30px;
    	bottom: 125px;
-   	transition: all 0.5s;
+   	transition: all 0.75s;
+   	-webkit-transition: all 0.75s;
 }
 
 #to_top i {
@@ -383,7 +383,8 @@ body {
     left: 6px;
     top: 6.5px;
     font-size: 19px;
-    transition: all 0.5s;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
     /* edit this
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -396,42 +397,35 @@ body {
 #to_top:hover {
     background-color: rgba(0, 0, 0, 1);
     transition: all 0s;
+    -webkit-transition: all 0s;
+
 }
 #to_top:hover i {
     color: rgba(255, 255, 255, 1);
     top: 3px;
     transition: all 0s;
+    -webkit-transition: all 0s;
 }
 
 .link {
 	display: block;
 	font-size: 50px;
-	color: red;
+	color: rgba(183,0,0,1);
 	padding: 20px;
 	margin-left: 15px;
-	transition: 0.75s; /* how much time it takes to turn back to "normal"*/
+	transition: color 0.75s; /* how much time it takes to turn back to "normal"*/
+	-webkit-transition: color 0.75s;
 }
 
 .link:hover {
-	color: blue;
-	transition: 0s; /*how much time it takes to turn into this at hover (transition 0s = instant) */
-}
-
-footer {
-	background-color: #F45C82;
-	height: 60px;
-	width: 100%;
-	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
- 	color: black;
- 	text-transform: none; 
- 	font-weight: none;
- 	font-size: 1.00vmax; 
- 	letter-spacing: 0vw;
+	color: rgba(0,0,150,1);
+	transition: color 0s; /*how much time it takes to turn into this at hover (transition 0s = instant) */
+	-webkit-transition: color 0s;
 }
 
 .bullet_pt_style {
 	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
- 	color: #F45C82;
+ 	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
  	font-size: 1.20vmax; 
@@ -448,27 +442,46 @@ footer {
 	margin-right: 6px;
 }
 
+footer {
+	background-color: rgba(183,0,0,1);
+	height: 60px;
+	width: 100%;
+	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+ 	color: rgba(255, 255, 0, 1);
+ 	text-transform: none; 
+ 	font-weight: none;
+ 	font-size: 1.00vmax; 
+ 	letter-spacing: 0vw;
+}
+
+
 /* FIX ME Change footer_links colors when you are changing the color scheme of your page*/
 .footer_links {
 	text-decoration: none;
-	transition: 2s;
-	color: rgba(0,0,153,0.5);
+	color: rgba(255, 255, 0, 1);
+	transition: all 0.75s;
+	-webkit-transition: all 0.75s;
 }
 
+/* visited styling for 2 links in the footer might be overkill and not needed. Come back to this later maybe
 .footer_links:visited {
-	transition: 1s;
-	color: rgba(211,211,46,1.0);
-	
+	transition: all 0.75s;
+	-webkit-transition: all 0.75s;
+	color: #CE9AFE;	
 }
+*/
 
 .footer_links:hover {
-	transition: 0s;
-	color: rgba(0,0,153,1);
+	color: rgba(0,0,150,1);
+	text-decoration: underline;
+	transition: all 0s;
+	-webkit-transition: all 0s;
 }
 
 .footer_links:active {
-	transition: 0s;
-	color: rgba(255,255,0,1);
+	color: rgba(255,255,0,0.6);
+	text-decoration: underline;
+	transition: all 0s;
 }
 
 #copyright_date {

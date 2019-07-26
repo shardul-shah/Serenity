@@ -36,6 +36,12 @@ TODO #24: Make mute icons and element-type icons change colour on hover maybe.
 
 TODO #25: Maybe change the play/pause button from CSS based to font awesome icon based so it's more consistent and easier to work with. FUTURE TODO.
 
-TODO #26: CHANGE COLOUR SCHEME
 
 TODO #27: add keyframes to windowScroll.js to hide button after the user scrolls too far up
+
+TODO #28: Change transition effects to be consistent (relatively) across the site (DONE)
+
+TODO #29: add transition all browsers (webkit-...)
+
+TODO #30: FIX CENTERING OF PAUSE/PLAY BUTTON
+
