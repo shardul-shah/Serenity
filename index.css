@@ -1,6 +1,6 @@
 html, body {
-	margin: 0px;
-   	padding: 0px;
+	margin: 0;
+   	padding: 0;
    	height: 100%;
 }
 
@@ -40,7 +40,7 @@ li  {
 
 #nav_bar li a /* all <a> nested inside <li> */ {
 	display: block;
-	padding: 11px; 
+	padding: 0.9vmax; /* FIXME trying 1 vmax for now, if it isn't good, will go back to 12px/other units */
 	color: rgba(255,255,0,1);
 	background-color: rgba(183,0,0,1);
 	text-decoration: none;
@@ -56,13 +56,7 @@ li  {
 }
 
 body {
-	/* 
-	background-image: url("images/forest_rain.jpg");
-	background-size: cover;
-	background-color: #accbe1;
-	*/
 	/* animation via keyframes */
-
 	animation: colourtransition 120s infinite alternate; /* for Opera and Mozilla */ 
 	 -webkit-animation: colourtransition 120s infinite alternate; /*for Safari and Chrome */
 }
@@ -186,16 +180,15 @@ body {
 /* CSS for actual slider */
 .slider {
 	-webkit-appearance: none; /* Override default CSS styles */
-	/*appearance: none; probably not needed */
-	 width: 20%; /* Full-width */
-	 height: 25px;
-	 outline: none;
-	 -webkit-transition: background-color 0.75s; /* for safari*/
-	 transition: background-color: 0.75s; /* for other browsers */
-	 background-color: rgba(183, 0, 0, 1); /* default BG colour without hover */
-	 border-radius: 7px;
+	appearance: none; 
+	width: 25%; /* Full-width */
+	height: 10%;
+	outline: none;
+	-webkit-transition: background-color 0.75s; /* for safari*/
+	transition: background-color: 0.75s; /* for other browsers */
+	background-color: rgba(183, 0, 0, 1); /* default BG colour without hover */
+	border-radius: 0.5vw;
 }
-
 
 /* fully show slider on hover (opacity: 0.6 -> 1) */
 .slider:hover {
@@ -204,83 +197,50 @@ body {
 	transition: background-color: 0s; /* for other browsers */
 } 
 
-/* Below is the code for having a non-image, vibrant slider thumb which glows on hover. Commented it out for now. Will see what to do with it in the future. /*
-/*
-/* CSS for slider-thumb/icon, for all browsers not Mozilla
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none; /* Override default CSS styles /*
-	/*appearance: none; probably not needed 
-	width: 30px; 
-	height: 25px;
-	cursor: pointer; /* Cursor on hover of thumb /*
-	background-color: #99CA9B; 
-	transition: background-color 0.3s;
-	-webkit-transition: background-color: 0.3s;
-} 
-
-/* CSS for slider-thumb/icon, for Mozilla 
-.slider::-moz-range-thumb { 
-	-webkit-appearance: none; /* Override default look 
-  	width: 30px; /* Set a specific slider handle width 
-  	height: 25px; /* Slider handle height 
-  	background-color: #99CA9B; 
-  	cursor: pointer; /* Cursor on hover of thumb
-  	transition: background-color 0.3s;
-}
-
-.slider::-webkit-slider-thumb:hover {
-	background-color: #4CAF50;
-}
-*/
-
-/* Below is the code for a unique, raindrop shaped slider thumb */
-
 /* CSS for slider-thumb/icon, for all browsers not Mozilla */
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	/*appearance: none; probably not needed */
-	width: 20px;
-	height: 20px;
+	appearance: none;
+	width: 1.1vmax;
+	height: 1.1vmax;
 	cursor: pointer;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
 	background-size: cover;
 }
 
-
 /* CSS for slider-thumb/icon, for Mozilla */
 .slider::-moz-slider-thumb {
 	-webkit-appearance: none;
-	/*appearance: none; probably not needed */
-	width: 20px;
-	height: 20px;
+	appearance: none;
+	width: 1.1vmax;
+	height: 1.1vmax;
 	cursor: pointer;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
 	background-size: cover;
 } 
 
 .mute_icon {
-	height: 25px;
-	width: 25px;
+	height: 2vmax;
+	width: 2vmax;
 }
 
 .slider_div {
-	height: 50px;
-	width: 100%;
+	height: 7.15vh;
+	width: 100vw;
 }
 
-
 #collapsible {
-	height: 30px;
+	height: 4.3vh;
+	width: 45vw;
 	-webkit-transition: background-color 0.75s; /* for safari*/
 	transition: background-color: 0.75s; /* for other browsers */
 	background-color: rgba(183,0,0,1); /* default BG colour without hover */
   	color: yellow;
   	cursor: pointer;
-  	width: 30%;
   	border: none;
   	text-align: center;
   	outline: none;
-  	font-size: 1.5vmax;
+  	font-size: 1.3vmax;
   	font-family: IBM Plex Sans, Times New Roman, Georgia, serif;
 
 } 
@@ -298,21 +258,19 @@ body {
 	-webkit-transition: all 0s;
 }
 
+
 #collapsed_div {
-  padding: 0 18px;
+  padding: 0 1.25vmax;
   overflow: hidden;
   display: none;
-}
 
-.slider {
-	width: 25%;
 }
 
 .slider_icons {
-	height: 18px;
-	width: 18px;
-	font-size: 17.5px;
-	margin-right: 5px;
+	height: 1.25vmax;
+	width: 1.25vmax;
+	font-size: 1.50vmax;
+	margin-right: 0.70vmax;
 
 	/* we need both height/width and font-size in order to both align the icons and keep the 
 	icons the same size as the speaker/mute icons*/
@@ -357,11 +315,11 @@ body {
 	background-color: rgba(0, 0, 0, 0.7);
 	opacity: 0.0;
 	text-decoration: none;
-	-webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    border-radius: 35px;
-    width: 30px;
-    height: 30px;
+	-webkit-border-radius: 2.45vmax;
+    -moz-border-radius: 2.45vmax;
+    border-radius: 2.45vmax;
+    width: 1.95em;
+    height: 1.95em;
     /* edit this
     -webkit-transition: all 0.3s linear;
     -moz-transition: all 0.3s ease;
@@ -370,8 +328,8 @@ body {
     transition: all 0.3s ease;
     */
     z-index: 1;
-   	right: 30px;
-   	bottom: 125px;
+   	right: 2.10vw;
+   	bottom: 17.75vh;
    	transition: all 0.75s;
    	-webkit-transition: all 0.75s;
 }
@@ -380,9 +338,11 @@ body {
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
     position: relative;
-    left: 6px;
-    top: 6.5px;
-    font-size: 19px;
+    left: 0.4167vw;
+    top: 0.9220vh;
+    left: 0.3em;
+    top: 0.5em;
+    font-size: 1.3em;
     transition: all 0.75s;
     -webkit-transition: all 0.75s;
     /* edit this
@@ -438,20 +398,25 @@ body {
 }
 
 .fa-tint {
-	font-size: 14px;
-	margin-right: 6px;
+	font-size: 0.85em;
+	margin-right: 0.2em;
+}
+
+.fa-tint:hover {
+	color: rgba(0,0,150,1);
 }
 
 footer {
 	background-color: rgba(183,0,0,1);
-	height: 60px;
+	height: 8.5vh;
 	width: 100%;
 	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
  	color: rgba(255, 255, 0, 1);
  	text-transform: none; 
  	font-weight: none;
  	font-size: 1.00vmax; 
- 	letter-spacing: 0vw;
+ 	letter-spacing: 0;
+ 	margin-top: -20px;
 }
 
 
@@ -462,14 +427,6 @@ footer {
 	transition: all 0.75s;
 	-webkit-transition: all 0.75s;
 }
-
-/* visited styling for 2 links in the footer might be overkill and not needed. Come back to this later maybe
-.footer_links:visited {
-	transition: all 0.75s;
-	-webkit-transition: all 0.75s;
-	color: #CE9AFE;	
-}
-*/
 
 .footer_links:hover {
 	color: rgba(0,0,150,1);
@@ -489,6 +446,13 @@ footer {
 }
 
 #privacy_policy {
-	margin-top: 5px;
+	margin-top: 0.70vh;
 }
 
+.secondary_title_div {
+	margin-top: -7.10vh;
+}
+
+.other_descriptions_div {
+	margin-bottom: -4.26vh;
+}

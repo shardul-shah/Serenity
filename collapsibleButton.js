@@ -1,7 +1,12 @@
 var collapsible_btn = document.getElementById("collapsible");
 var collapsed_div = document.getElementById("collapsed_div"); 
+collapsible_arrows = collapsible_btn.children
 
 function toggleCollapsible() {
+
+	for (i=0; i<collapsible_arrows.length; i++) 
+		collapsible_arrows[i].classList.toggle("fa-chevron-up");
+
 	if (window.getComputedStyle(collapsed_div).display == "none") {
 
 		/* note: getComputedStyle is needed because in JS, .style only gives the default style of an element.
@@ -16,6 +21,7 @@ function toggleCollapsible() {
 		*/ 
 		collapsed_div.style.display = "flex";
 		displayGlowEffect();
+		
 	}
 	
 	else {

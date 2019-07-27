@@ -97,7 +97,13 @@
 			</button>
 		</div>
 		<div class="container_horizontal">
-			<button id="collapsible" onclick="toggleCollapsible()">Control Specific Sound Types</button>
+			<button id="collapsible" onclick="toggleCollapsible()">
+				<i class="fas fa-chevron-down">
+				</i>
+			Control Specific Sound Types
+				<i class="fas fa-chevron-down">
+				</i>
+		</button>
 		</div>
 				<div class="container_vertical" id="collapsed_div">
 					<div class="container_horizontal slider_div">
@@ -105,54 +111,54 @@
 						</i> 
 						<!-- observe that these icons act as a button, even though their elements are img -->
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="rain_mute_icon" onclick="toggleMute(&quot;rain&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="rain_slider" oninput="adjustVolume(this.value, &quot;rain&quot;)" onchange="adjustVolume(this.value, &quot;rain&quot;)">
   					</div>
 
   					<div class="container_horizontal slider_div">
   						<i class="fas fa-tree slider_icons" title="Forest"> 
   						</i> 
 						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="forest_mute_icon" onclick="toggleMute(&quot;forest&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="forest_slider" oninput="adjustVolume(this.value, &quot;forest&quot;)" onchange="adjustVolume(this.value, &quot;forest&quot;)">
   					</div>
 
   	  				<div class="container_horizontal slider_div">
   	  					<i class="fas fa-wind slider_icons" title="Wind"> 
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="wind_mute_icon" onclick="toggleMute(&quot;wind&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="wind_slider" oninput="adjustVolume(this.value, &quot;wind&quot;)" onchange="adjustVolume(this.value, &quot;wind&quot;)">
   					</div>
 
   	  				<div class="container_horizontal slider_div">
   	  					<i class="fas fa-fire slider_icons" title="Fire">
   	  					</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="fire_mute_icon" onclick="toggleMute(&quot;fire&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="fire_slider" oninput="adjustVolume(this.value, &quot;fire&quot;)" onchange="adjustVolume(this.value, &quot;fire&quot;)">
   					</div>
 
   					<div class="container_horizontal slider_div">
   						<i class="fas fa-bolt slider_icons" title="Thunder">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="thunder_mute_icon" onclick="toggleMute(&quot;thunder&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="thunder_slider" oninput="adjustVolume(this.value, &quot;thunder&quot;)" onchange="adjustVolume(this.value, &quot;thunder&quot;)">
   					</div>
 
   					<div class="container_horizontal slider_div">
   						<i class="fas fa-water slider_icons" title="Ocean">
   						</i> 
   						<img src="images/speaker_icon.png" alt="Mute/Unmute Button" title="Mute/Unmute Button" class="mute_icon" id="ocean_mute_icon" onclick="toggleMute(&quot;ocean&quot;)">
-  							<input type="range" min="0" max="100" value="50" class="slider" id="ocean_slider" oninput="adjustVolume(this.value, &quot;ocean&quot;)" onchange="adjustVolume(this.value, &quot;ocean&quot;)">
+  						<input type="range" min="0" max="100" value="50" class="slider" id="ocean_slider" oninput="adjustVolume(this.value, &quot;ocean&quot;)" onchange="adjustVolume(this.value, &quot;ocean&quot;)">
   					</div>
 				</div>
 		<div class="wave">
 		</div>
 		<div class="wave inverse_wave">
 		</div>
-		<div class="container_vertical" id="contact">
+		<div class="container_vertical secondary_title_div">
 			<h1 class="secondary_title"> 
 			Contact
 			</h1>
 		</div>
-		<div class="container_vertical">
+		<div class="container_vertical other_descriptions_div">
 			<p class="other_descriptions">
 			Contact me.
 			</p>
@@ -171,12 +177,12 @@
 		</div>
 		<div class="wave inverse_wave">
 		</div>
-		<div class="container_vertical" id="about">
+		<div class="container_vertical secondary_title_div">
 			<h1 class="secondary_title"> 
 			About
 			</h1>
 		</div>
-		<div class="container_vertical">
+		<div class="container_vertical other_descriptions_div">
 			<p class="other_descriptions">
 			I started this website because of many reasons. Here are some of the main ones:
 				<ul class="container_horizontal bullet_pt_style"> 
@@ -202,12 +208,12 @@
 		</div>
 		<div class="wave inverse_wave">
 		</div>
-		<div class="container_vertical" id="social_media">
+		<div class="container_vertical secondary_title_div">
 			<h1 class="secondary_title"> 
 			Social Media
 			</h1>
 		</div>
-		<div class="container_vertical">
+		<div class="container_vertical other_descriptions_div">
 			<p class="other_descriptions">
 			Feel free to share or connect with any of the social media of Serenity below.
 			</p>

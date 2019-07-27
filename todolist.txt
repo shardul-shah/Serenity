@@ -1,10 +1,13 @@
 Current TODO list:
-TODO #33: Clean up code
-TODO #32: Comment code
-TODO #34: Change spacing of sections as too much spacing is left at times.
-TODO #21: make everything compatible on all devices (e.g. phone) and all OS (e.g. Mac, Windows)
-TODO #15: Fix how #inverse_Wave looks in other browsers.
-TODO #16: Convert all the units to responsive units.
+TODO #33: Clean up code DONE
+TODO #34: Change spacing of sections as too much spacing is left at times. DONE
+TODO #21: make everything compatible on all devices (e.g. phones tablets) 
+TODO #22: make everything compatible on all OS (e.g. Mac, Windows)
+TODO #15: Fix how #inverse_Wave looks in other browsers (e.g. Remove lines or waves or change waves entirely)
+TODO #16: Convert all the units to responsive units (except the things that don't need it). DONE
+TODO #35: Center collapsible on mobiles
+TODO #36: Ensure everything is proper size on mobiles (especially .link class).
+TODO #37: Fix font awesome hrefs (use Google API to make them the way they should be)
 
 
 Code Clarity TODO list:
@@ -12,6 +15,7 @@ TODO #12: Change all event handler functions of JS into 1 file and structure the
 TODO #11: Maybe change arrays into dictionaries for clarity in code, and actually use the arrays in code. 
 TODO #10: maybe instead of using fire, rain, thunder, etc, all the variables should be in a few arrays/dictionaries and the lists should be referred to directly for readability and clarity (using for loops to go through arrays)
 TODO #5: maybe change script in HTML that initializes volumes to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp 
+TODO #32: Comment code.
 
 
 Future TODO list:
@@ -24,3 +28,5 @@ TODO #27: Add keyframes to windowScroll.js to hide button after the user scrolls
 TODO #30: FIX CENTERING OF PAUSE/PLAY BUTTON
 TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the button, it shows the hover styled button for each play and pause? Right now it doesn't do that until I take my mouse away from the button and then click back on it.
 TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter; soln: KEYFRAMES SOLN TO HIDING COLLAPSIBLE BTN
+TODO #18: Change CSS of chevron arrows in collapsible (up/down) by hovering over the actual collapsible (either through JS/CSS); couldn't figure it out through CSS. Refer to #to_top i  hover style and mimick it when you figure out how to do it.
+
