@@ -46,7 +46,7 @@ li  {
 	text-decoration: none;
 	transition: background-color 0.75s;
 	-webkit-transition: background-color 0.75s;
-	font-family: IBM Plex Sans, Times New Roman, Georgia, serif;
+	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif;
 }
 
 #nav_bar li a:hover {
@@ -119,7 +119,7 @@ body {
 }
 
 #main_title {
-	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
+	font-family: Great Vibes, Bilbo Swash Caps, cursive;
  	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
@@ -129,7 +129,7 @@ body {
 }
 
 .secondary_title {
-	font-family: Great Vibes, Bilbo Swash Caps, Times New Roman, Georgia, serif;
+	font-family: Great Vibes, Bilbo Swash Caps, cursive;
  	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
@@ -139,7 +139,7 @@ body {
 }
 
 #app_description {
-	font-family: Bilbo Swash Caps, Great Vibes, Times New Roman, Georgia, serif;
+	font-family: Bilbo Swash Caps, Great Vibes, serif;
  	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
@@ -150,7 +150,7 @@ body {
 }
 
 .other_descriptions {
-	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif;
  	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
@@ -240,8 +240,8 @@ body {
   	border: none;
   	text-align: center;
   	outline: none;
-  	font-size: 1.3vmax;
-  	font-family: IBM Plex Sans, Times New Roman, Georgia, serif;
+  	font-size: 1.2vmax;
+  	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif;
 
 } 
 
@@ -384,7 +384,7 @@ body {
 }
 
 .bullet_pt_style {
-	font-family: IBM Plex Sans, Times New Roman, Georgia, serif; /*FIXME perhaps change IBM Plex font choice later */
+	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif; /*FIXME perhaps change IBM Plex font choice later */
  	color: rgba(0, 0, 0, 1);
  	text-transform: none; 
  	font-weight: bolder;
