@@ -1,10 +1,7 @@
 Current TODO list:
-TODO #33: Clean up code DONE
-TODO #34: Change spacing of sections as too much spacing is left at times. DONE
-TODO #21: make everything compatible on all devices (e.g. phones tablets) 
+TODO #21: make everything compatible on all devices (e.g. phones tablets) (e.g. hover)
 TODO #22: make everything compatible on all OS (e.g. Mac, Windows)
 TODO #15: Fix how #inverse_Wave looks in other browsers (e.g. Remove lines or waves or change waves entirely)
-TODO #16: Convert all the units to responsive units (except the things that don't need it). DONE
 TODO #35: Center collapsible on mobiles
 TODO #36: Ensure everything is proper size on mobiles (especially .link class).
 TODO #37: Fix font awesome hrefs (use Google API to make them the way they should be)
