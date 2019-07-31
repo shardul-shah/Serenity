@@ -1,29 +1,21 @@
-Current TODO list:
-TODO #21: make everything compatible on all devices (e.g. phones tablets) (e.g. hover)
-TODO #22: make everything compatible on all OS (e.g. Mac, Windows)
-TODO #15: Fix how #inverse_Wave looks in other browsers (e.g. Remove lines or waves or change waves entirely)
-TODO #35: Center collapsible on mobiles
-TODO #36: Ensure everything is proper size on mobiles (especially .link class).
-TODO #37: Fix font awesome hrefs (use Google API to make them the way they should be)
+TODO list:
 
-
-Code Clarity TODO list:
-TODO #12: Change all event handler functions of JS into 1 file and structure them in order of appearance in HTML.
-TODO #11: Maybe change arrays into dictionaries for clarity in code, and actually use the arrays in code. 
-TODO #10: maybe instead of using fire, rain, thunder, etc, all the variables should be in a few arrays/dictionaries and the lists should be referred to directly for readability and clarity (using for loops to go through arrays)
-TODO #5: maybe change script in HTML that initializes volumes to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp 
-TODO #32: Comment code.
-
-
-Future TODO list:
-TODO #20: Add Fun Facts regarding relaxation, focus, elements, etc. etc. etc. 
-TODO #23: Add reasoning/science behind sounds behind focus page as well. 
-TODO #24: Make mute icons and element-type icons change colour on hover maybe. 
-TODO #25: Maybe change the play/pause button from CSS based to font awesome icon based so it's more consistent and easier to work with. 
-TODO #3: Make master volume be controlled by main volume slider (MAYBE MAKE ONE).
-TODO #27: Add keyframes to windowScroll.js to hide button after the user scrolls too far up 
-TODO #30: FIX CENTERING OF PAUSE/PLAY BUTTON
-TODO #1: how do I make it so when I spam click on the play/pause button, since my mouse is technically still on the button, it shows the hover styled button for each play and pause? Right now it doesn't do that until I take my mouse away from the button and then click back on it.
-TODO #17: How to hide the "Scroll Up" button AND allow it to transition at the same time? I can only do the latter; soln: KEYFRAMES SOLN TO HIDING COLLAPSIBLE BTN
-TODO #18: Change CSS of chevron arrows in collapsible (up/down) by hovering over the actual collapsible (either through JS/CSS); couldn't figure it out through CSS. Refer to #to_top i  hover style and mimick it when you figure out how to do it.
-
+TODO #1 Make sure web application is compatible on phones & tablets [e.g. subsituting animation for hover for tap on touchscreen devices].
+TODO #2 Confirm that web application is working as intended on all web browsers on all OS (specifically, Safari, Mozilla, Opera, Google Chrome on Mac, Linux, Windows)
+TODO #3 Fix how #inverse_Wave/#wave looks broken sometimes in browsers (Fix the bug, or because the idea is too hard to work with, change the waves into some other border entirely).
+TODO #4 Center collapsible & its content on mobile devices.
+TODO #5: Ensure everything is proper size on mobiles (especially .link class objects)
+TODO #6: Possibly change all event handler functions of JS into 1 file and structure them in order of appearance in HTML.
+TODO #7: Potentially convert the use of all the element objects (e.g. sounds, slider, volume, etc) into using arrays/dictionaries. This way I won't have to refer to fire, rain, thunder invidiually every time. Change relevant code for clarity.
+TODO #9: Maybe change script in HTML that initializes volumes to directly doing it like "IN HTML" on this page: https://www.w3schools.com/jsref/event_onloadstart.asp 
+TODO #10: Document code further, clean it up further.
+TODO #11: Add Fun Facts regarding relaxation, focus, elements, etc. etc. etc. 
+TODO #12: Add Reasoning/Science behind the idea of 'sounds behind focus' page as well. 
+TODO #13: Add Dark Mode Option for color scheme.
+TODO #14: Consider making mute icons and element-type icons change colour on hover (just because it can be done doesn't mean it has to be done; think about it carefully first)
+TODO #15: Consider changing the play/pause button from pure CSS and border based to font-awesome icon based so it's more consistent and easier to work with, and will display without problem. This will also help fix the CENTERING of the play/pause button.
+TODO #16: Consider adding a master volume slider which controls all of the volumes at once. The mute button for it can behave as follows: once muted, all the sounds will be muted; once unmuted, all of the sounds will go to the volume of master. Slider controls all of the volumes. Changing individual slider volumes overrides master volume slider. This concept has a lot of flaws and can be problematic, and is thus only an idea.
+TODO #17: Add keyframes to windowScroll.js to properly hide the "scroll up" button after the user scrolls too far up (right now, it's not technically hidden; it only disappars).
+TODO #18: Make it so when I spam click on the play/pause button, since my mouse is technically still on the button, it shows the hover styled button for each play and pause. Right now it doesn't do that until I take my mouse away from the button and then hover back on it.
+TODO #19: Change CSS of chevron arrows in collapsible (up/down) by hovering over the actual collapsible (either through JS/CSS); couldn't figure it out through CSS, so likely use JS. Refer to #to_top i hover style and mimick it when you figure out how to do it. That is, the chevron arrows move up and down on hover and back to their original position when not hovered.
+TODO #20: Potentially change slider thumb from SVG of Font Awesome Icon to something else to fix the thumbs showing as a white background in Safari, and the thumbs disappearing sometimes. Or find another solution for the slider thumbs. More relevant information for this issue here: https://github.com/FortAwesome/Font-Awesome/issues/1119

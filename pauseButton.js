@@ -28,7 +28,6 @@ function togglePlay() {
 };
 
 function mouseOverEffect() {
-
 	// sound is currently paused, so display the hover style for play button
 	if (rain_sound.paused && forest_sound.paused && wind_sound.paused && fire_sound.paused && thunder_sound.paused && ocean_sound.paused) {
 		toggle_btn.style.borderColor = "transparent transparent transparent rgba(0,0,150,1)";
@@ -36,8 +35,7 @@ function mouseOverEffect() {
 	}
 
 	// sound is currently playing, so display the hover style for pause button
-	else 
-	{	
+	else {	
 		toggle_btn.style.borderColor = "rgba(0,0,150,1)";
 		toggle_btn.style.transition = "border-color 0s";
 	}
