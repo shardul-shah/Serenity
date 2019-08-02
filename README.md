@@ -27,7 +27,7 @@ However, here is a summary of these ideas:
 
 1. Add "Research & Science" section.
 2. Add "Fun Facts" section.
-3. Add "Dark Mode" feature.
+3. Add "**Dark Mode**" feature.
 4. Making the web application *fully* responsive on devices like tablets and phones.
 5. Add many more sound types.
 6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
