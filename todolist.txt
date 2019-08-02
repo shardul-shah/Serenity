@@ -22,3 +22,5 @@ TODO #20: Potentially change slider thumb from SVG of Font Awesome Icon to somet
 TODO #21: Use https://web.dev/measure, https://gtmetrix.com/, https://www.webpagetest.org/ and https://tools.pingdom.com/ to improve your website even further, by using the tips and suggestions that are recommended and ingraining them into your website to improve performance, speed, and accessibility (*IMPORTANT).
 TODO #22: Follow code best practices of JS, HTML, CSS (e.g. organize CSS alphabetically).
 TODO #23: Start using window LocalStorage / cookies for caching so your website loads more efficiently and faster, especially for repeat visitors.
+TODO #24: Make the website fully follow the concepts of Web Accessibility (can be found here: https://www.w3.org/WAI/fundamentals/accessibility-intro/).
+TODO #25: Add many more different sound types! Add a variety, there is no limit really.
