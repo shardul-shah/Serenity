@@ -13,7 +13,7 @@ Direct URL of web application: https://shardul-shah.github.io/Serenity/
 3. Fast loading times.
 4. Simple, easy to use, and concise.
 5. Ability to control and mix 6 sound types (*many more to be added soon*).
-6. Background colours of Serenity change unintrusively, in a specific theme related to the sounds that are avaliable on Serenity.
+6. Background colours of Serenity change unintrusively, in a specific *theme* related to the sounds that are avaliable on Serenity.
 
 # Visuals
 Below are some GIFs of Serenity. Click [here](https://github.com/shardul-shah/Serenity#support) to skip below the GIFs.
