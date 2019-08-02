@@ -36,7 +36,7 @@ However, here is a summary of these ideas:
 3. Add **Dark Mode** feature.
 4. Making the web application *fully* responsive on devices like tablets and phones.
 5. Add many more sound types.
-6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
+6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/)).
 7. General improvements (both small and big) across the web application, including bug fixes, code & app optimization, and code enhancement.
 
 # Authors & Contributors
