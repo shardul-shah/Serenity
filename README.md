@@ -15,7 +15,7 @@ Direct URL of web application: https://shardul-shah.github.io/Serenity/
 5. Ability to control and mix 6 sound types (*many more to be added soon*).
 
 # Visuals
-
+![](gifs/features.gif)
 
 
 # Support
