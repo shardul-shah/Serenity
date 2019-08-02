@@ -17,7 +17,7 @@ There has been growing research on not just sound-based relaxation & concentrati
 
 
 # Support
-If you require assistance, you can email me at shardul@ualberta.ca and I will respond as soon as possible
+If you require assistance, want to give feedback or suggestions, or need to contact me for any other reason, you can email me at shardul@ualberta.ca and I will respond as soon as possible. 
 
 # Roadmap
 There are many new concepts and improvements to the web application which I plan to add in the near future. A full list can be found in the file "todolist.txt" above.
@@ -29,12 +29,12 @@ However, here is a summary of these ideas:
 4. Making the web application *fully* responsive on devices like tablets and phones.
 5. Add many more sound types.
 6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
-7. General improvements (both small and big) across the web application, including bug fixes, code & app optimization, and code enhancement
+7. General improvements (both small and big) across the web application, including bug fixes, code & app optimization, and code enhancement.
 
 # Authors & Contributors
 Shardul Shah
 
 # License
-MIT License
+[MIT License](https://choosealicense.com/licenses/mit/)
 
 
