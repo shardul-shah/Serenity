@@ -6,11 +6,11 @@ There has been growing research on not just sound-based relaxation & concentrati
 
 
 # Features
-1. Accessible & readable 
-2. Responsive (i.e. compatible on tablets, phones, etc.)
-3. Fast loading times
-4. Simple, easy to use, and concise
-5. Ability to control and mix 6 sound types (*more to be added soon)
+1. Web accessible & readable. 
+2. Responsive web design (e.g. compatible on tablets & phones).
+3. Fast loading times.
+4. Simple, easy to use, and concise.
+5. Ability to control and mix 6 sound types (*many more to be added soon*).
 
 # Visuals
 
@@ -23,13 +23,15 @@ If you require assistance, you can email me at shardul@ualberta.ca and I will re
 There are many new concepts and improvements to the web application which I plan to add in the near future. A full list can be found in the file "todolist.txt" above.
 However, here is a summary of these ideas:
 
-1. Add "Research & Science" section
-2. Add "Fun Facts" section
-3. Add "Dark Mode" feature
-4. Making the web application *fully* responsive on devices like tablets and phones
-5. General improvements (both small and big) across the web application
+1. Add "Research & Science" section.
+2. Add "Fun Facts" section.
+3. Add "Dark Mode" feature.
+4. Making the web application *fully* responsive on devices like tablets and phones.
+5. Add many more sound types.
+6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
+7. General improvements (both small and big) across the web application, including bug fixes, code & app optimization, and code enhancement
 
-# Author
+# Authors & Contributors
 Shardul Shah
 
 # License
