@@ -13,10 +13,16 @@ Direct URL of web application: https://shardul-shah.github.io/Serenity/
 3. Fast loading times.
 4. Simple, easy to use, and concise.
 5. Ability to control and mix 6 sound types (*many more to be added soon*).
+6. Background colours of Serenity change unintrusively, in a specific *theme* related to the sounds that are avaliable on Serenity.
 
 # Visuals
-![](gifs/features.gif)
+Below are some GIFs of Serenity. Click [here](https://github.com/shardul-shah/Serenity#support) to skip below the GIFs.
 
+![](gifs/features1.gif)
+
+![](gifs/features2.gif)
+
+![](gifs/features3.gif)
 
 # Support
 If you require assistance, want to give feedback or suggestions, or need to contact me for any other reason, you can email me at shardul@ualberta.ca and I will respond as soon as possible. 
@@ -30,7 +36,7 @@ However, here is a summary of these ideas:
 3. Add **Dark Mode** feature.
 4. Making the web application *fully* responsive on devices like tablets and phones.
 5. Add many more sound types.
-6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
+6. Make the website *fully* follow the concepts of Web Accessibility (learn more about Web Accessibility [here](https://www.w3.org/WAI/fundamentals/accessibility-intro/)).
 7. General improvements (both small and big) across the web application, including bug fixes, code & app optimization, and code enhancement.
 
 # Authors & Contributors
