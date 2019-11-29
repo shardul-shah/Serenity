@@ -397,6 +397,17 @@ body {
  	list-style-type: none;
 }
 
+.main_text {
+	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif; /*FIXME perhaps change IBM Plex font choice later */
+	color: rgba(0, 0, 0, 1);
+ 	text-transform: none; 
+ 	font-weight: bolder;
+ 	font-size: 1.20vmax; 
+ 	letter-spacing: 0.06vw;
+ 	text-align: center;
+ 	line-height: 1.6;
+}
+
 .fa-tint {
 	font-size: 0.85em;
 	margin-right: 0.2em;
