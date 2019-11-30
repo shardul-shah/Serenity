@@ -11,11 +11,11 @@ html, body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  /* flex-direction is row by default */
+  align-items: center;
   justify-content: flex-start;
+  /* flex-direction is row by default */
   background-color: rgba(183,0,0,1);
-  overflow: hidden; /* FIXME what does this do? */  
+  overflow: hidden; /* FIXME what does this do? */ 
 }
 
 /* for medium sized screens; if 800 pixels >= screen_width > 500 pixels */
@@ -34,13 +34,26 @@ html, body {
 	}
 }
 
-li  {
-  float: left;
+#nav_bar li {
+    flex: 0 1 auto;
+    text-align: center;
+  }
+
+#nav_bar li:last-child {
+ 	text-align: right;
+	padding: .5em;
+    flex: 0 1 auto;
+  }
+
+#nav_bar li:nth-last-child(2) {
+	text-align: right;
+	padding: .5em;
+    flex: 1 1 auto;
 }
 
 #nav_bar li a /* all <a> nested inside <li> */ {
 	display: block;
-	padding: 0.9vmax; /* FIXME trying 1 vmax for now, if it isn't good, will go back to 12px/other units */
+	padding: 1vmax; /* FIXME trying 1 vmax for now, if it isn't good, will go back to 12px/other units */
 	color: rgba(255,255,0,1);
 	background-color: rgba(183,0,0,1);
 	text-decoration: none;
@@ -83,6 +96,82 @@ body {
       	80%  {background: rgba(255,165,0, 0.5);}
       	100%  {background: rgba(255,255,0, 0.5);}
     }
+
+.dark_mode_bg {
+	background-color: rgba(0, 0, 0, 1);
+	animation: none;
+	-webkit-animation: none;
+}
+
+.dark_mode_text {
+	color: rgba(255, 255, 255, 1);
+}
+
+#dark_mode_label {
+	color: rgba(255,255,0,1);
+	font-family: 'IBM Plex Sans', Times New Roman, Georgia, sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+/* Completely hides default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/*Slider part of design */
+.slider_dark_mode {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider_dark_mode:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 3px;
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider_dark_mode {
+  background-color: rgba(255, 255, 0, 1);
+}
+
+input:focus + .slider_dark_mode {
+  box-shadow: 0 0 1px rgba(255, 255, 0, 1);
+}
+
+input:checked + .slider_dark_mode:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider_dark_mode.round {
+  border-radius: 34px;
+}
+
+.slider_dark_mode.round:before {
+  border-radius: 50%;
+}
 
 .container_vertical {
 	display: flex;
@@ -235,7 +324,7 @@ body {
 	-webkit-transition: background-color 0.75s; /* for safari*/
 	transition: background-color: 0.75s; /* for other browsers */
 	background-color: rgba(183,0,0,1); /* default BG colour without hover */
-  	color: yellow;
+  	color: rgba(255, 255, 0, 1);
   	cursor: pointer;
   	border: none;
   	text-align: center;

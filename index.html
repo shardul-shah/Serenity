@@ -37,6 +37,8 @@
 		</script>
 		<script type="text/javascript" src="scripts/copyrightAutoUpdate.js" defer>
 		</script>
+		<script type="text/javascript" src="scripts/darkMode.js" defer>
+		</script>
 	</head>
 
 	<body>
@@ -45,18 +47,24 @@
 				<li><a href="#contact">Contact</a></li>
 	  			<li><a href="#about">About</a></li>
 	 			<li><a href="#social_media">Social Media</a></li>
-	 			<!--<li><button id="dark_mode_button"></button></li>--> 
 	 			<li><a href="#research">Research & Science</a></li>
+	 			<li id="dark_mode_label">Enable Dark Mode</li>
+	 			<li>
+	 				<label class="switch">
+ 						<input type="checkbox" onclick="toggleDarkMode()">
+  							<span class="slider_dark_mode round"> </span>
+					</label>
+				</li>
 			</ul>
 		</nav>
 		<div class="container_vertical" id="main_title_div">
-			<h1 id="main_title">
+			<h1 id="main_title" class="text">
 			Serenity
 			</h1>
 		</div>
 
 		<div class="container_vertical" id="description_div">
-			<p id="app_description">
+			<p id="app_description" class="text">
 			A place of tantalizing tranquility. This website helps relax, study, sleep, meditate, and focus. Enjoy!
 			</p>
 		</div>
@@ -156,12 +164,12 @@
 		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical secondary_title_div" id="contact">
-			<h1 class="secondary_title"> 
+			<h1 class="secondary_title text"> 
 			Contact
 			</h1>
 		</div>
 		<div class="container_vertical other_descriptions_div">
-			<p class="other_descriptions">
+			<p class="other_descriptions text">
 			Contact me below.
 			</p>
 			<nav class="container_horizontal">
@@ -180,14 +188,14 @@
 		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical secondary_title_div" id="about">
-			<h1 class="secondary_title"> 
+			<h1 class="secondary_title text"> 
 			About
 			</h1>
 		</div>
 		<div class="container_vertical other_descriptions_div">
-			<p class="other_descriptions">
+			<p class="other_descriptions text">
 			I started this website because of many reasons. Here are some of the main ones:
-				<ul class="container_horizontal bullet_pt_style"> 
+				<ul class="container_horizontal bullet_pt_style text"> 
 					<li> 
 						<i class="fas fa-tint"> 
 						</i> 
@@ -211,12 +219,12 @@
 		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical secondary_title_div" id="social_media">
-			<h1 class="secondary_title"> 
+			<h1 class="secondary_title text"> 
 			Social Media
 			</h1>
 		</div>
 		<div class="container_vertical other_descriptions_div">
-			<p class="other_descriptions">
+			<p class="other_descriptions text">
 			Feel free to share or connect with any of the social media of Serenity below.
 			</p>
 			<nav class="container_horizontal">
@@ -239,20 +247,20 @@
 		<div class="wave inverse_wave">
 		</div>
 		<div class="container_vertical secondary_title_div" id="research">
-			<h1 class="secondary_title"> 
+			<h1 class="secondary_title text"> 
 			Research & Science
 			</h1>
 		</div>
 		<div class="container_vertical other_descriptions_div">
-			<p class="other_descriptions">
+			<p class="other_descriptions text">
 			In this section, I discuss the upcoming science behind sound-based concentration, and the research that has been done in studies on this topic.
 			</p>
-			<p class="main_text"> 
+			<p class="main_text text"> 
 			One of the best studies on the ability of sound - especially natural ones - to improve focus or relax a person can be found 
 				<a href="https://link.springer.com/article/10.3758%2Fs13423-018-1539-1" target="_blank">
 			here</a>. The abstract of the study begins by describing the 
 				<a href="https://en.wikipedia.org/wiki/Attention_restoration_theory" target="_blank">
-			Attention restoration theory (ART)</a>. To put it simply,
+			Attention restoration theory (ART)</a>. <!--To put it simply,-->
 			</p>
 		</div>
 
