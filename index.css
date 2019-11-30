@@ -267,6 +267,52 @@ input:checked + .slider_dark_mode:before {
 }
 
 /* CSS for actual slider */
+.slider_alt {
+	-webkit-appearance: none; /* Override default CSS styles */
+	appearance: none; 
+	width: 25%; /* Full-width */
+	height: 10%;
+	outline: none;
+	-webkit-transition: background-color 0.75s; /* for safari*/
+	transition: background-color: 0.75s; /* for other browsers */
+	background-color: rgba(183, 0, 0, 1); /* default BG colour without hover */
+	border-radius: 0.5vw;
+}
+
+/* fully show slider on hover (opacity: 0.6 -> 1) */
+.slider_alt:hover {
+	background-color: rgba(0,0,150,1);
+	-webkit-transition: background-color 0s; /* for safari*/
+	transition: background-color: 0s; /* for other browsers */
+} 
+
+/* CSS for slider-thumb/icon, for all browsers not Mozilla */
+.slider_alt::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1.1vmax;
+	height: 1.1vmax;
+	cursor: pointer;
+	/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
+	background-size: cover;*/
+	background: rgba(255, 255, 255, 1);
+	border-radius: 50%;
+}
+
+/* CSS for slider-thumb/icon, for Mozilla */
+.slider_alt::-moz-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 1.1vmax;
+	height: 1.1vmax;
+	cursor: pointer;
+	/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
+	background-size: cover;*/
+	background: rgba(255, 255, 255, 1);
+	border-radius: 50%;
+} 
+
+/* CSS for actual slider */
 .slider {
 	-webkit-appearance: none; /* Override default CSS styles */
 	appearance: none; 
@@ -293,8 +339,10 @@ input:checked + .slider_dark_mode:before {
 	width: 1.1vmax;
 	height: 1.1vmax;
 	cursor: pointer;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
-	background-size: cover;
+	/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
+	background-size: cover;*/
+	background: rgba(0, 0, 0, 1);
+	border-radius: 50%;
 }
 
 /* CSS for slider-thumb/icon, for Mozilla */
@@ -304,8 +352,10 @@ input:checked + .slider_dark_mode:before {
 	width: 1.1vmax;
 	height: 1.1vmax;
 	cursor: pointer;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
-	background-size: cover;
+	/*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' focusable='false' data-prefix='fas' data-icon='circle' class='svg-inline--fa fa-circle fa-w-16' role='img' viewBox='0 0 512 512'%3E%3Cpath fill='' d='M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z'/%3E%3C/svg%3E");
+	background-size: cover;*/
+	background: rgba(0, 0, 0, 1);
+	border-radius: 50%;
 } 
 
 .mute_icon {
@@ -360,7 +410,7 @@ input:checked + .slider_dark_mode:before {
 	width: 1.25vmax;
 	font-size: 1.50vmax;
 	margin-right: 0.70vmax;
-
+	color: rgba(0, 0, 0, 1)
 	/* we need both height/width and font-size in order to both align the icons and keep the 
 	icons the same size as the speaker/mute icons*/
 }
@@ -399,7 +449,68 @@ input:checked + .slider_dark_mode:before {
 	transform: rotate(180deg);
 }
 
-#to_top {
+
+.dark_mode_to_top {
+	background-color: rgba(255, 255, 255, 0.7);
+	position: fixed;
+	opacity: 0.0;
+	text-decoration: none;
+	-webkit-border-radius: 2.45vmax;
+    -moz-border-radius: 2.45vmax;
+    border-radius: 2.45vmax;
+    width: 1.95em;
+    height: 1.95em;
+    /* edit this
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    */
+    z-index: 1;
+   	right: 2.10vw;
+   	bottom: 17.75vh;
+   	transition: all 0.75s;
+   	-webkit-transition: all 0.75s;
+
+}
+
+.dark_mode_to_top i {
+	color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    position: relative;
+    left: 0.4167vw;
+    top: 0.9220vh;
+    left: 0.3em;
+    top: 0.5em;
+    font-size: 1.3em;
+    transition: all 0.75s;
+    -webkit-transition: all 0.75s;
+    /* edit this
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    */
+    z-index: 1;
+}
+
+.dark_mode_to_top:hover {
+	background-color: rgba(255, 255, 255, 1);
+	transition: all 0s;
+    -webkit-transition: all 0s;
+
+}
+
+.dark_mode_to_top:hover i {
+	color: rgba(0, 0, 0, 1);
+	top: 3px;
+    transition: all 0s;
+    -webkit-transition: all 0s;
+}
+
+.to_top {
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.7);
 	opacity: 0.0;
@@ -423,7 +534,7 @@ input:checked + .slider_dark_mode:before {
    	-webkit-transition: all 0.75s;
 }
 
-#to_top i {
+.to_top i {
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
     position: relative;
@@ -443,18 +554,19 @@ input:checked + .slider_dark_mode:before {
     */
     z-index: 1;
 }	
-#to_top:hover {
+.to_top:hover {
     background-color: rgba(0, 0, 0, 1);
     transition: all 0s;
     -webkit-transition: all 0s;
 
 }
-#to_top:hover i {
+.to_top:hover i {
     color: rgba(255, 255, 255, 1);
     top: 3px;
     transition: all 0s;
     -webkit-transition: all 0s;
 }
+
 
 .link {
 	display: block;

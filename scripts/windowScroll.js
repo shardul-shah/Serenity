@@ -3,7 +3,8 @@ function vh(value) {
   var height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
   return (value * height) / 100;
 }
- 
+to_top = document.getElementsByClassName("to_top")[0];
+
 window.addEventListener("scroll", displayScrollBtn);
 
 function displayScrollBtn() {
