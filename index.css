@@ -134,11 +134,12 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgba(204, 204, 204, 1)
   -webkit-transition: .4s;
   transition: .4s;
 }
 
+/*This is the circular "thumb" of the slider */
 .slider_dark_mode:before {
   position: absolute;
   content: "";
@@ -151,24 +152,29 @@ body {
   transition: .4s;
 }
 
+/* CSS for the slider if and only if Input is checked (i.e. dark mode is selected) */
 input:checked + .slider_dark_mode {
   background-color: rgba(255, 255, 0, 1);
 }
 
+/* CSS for the slider if and only if Input is in focus (i.e. dark mode is selected) */
 input:focus + .slider_dark_mode {
-  box-shadow: 0 0 1px rgba(255, 255, 0, 1);
+  box-shadow: 0 0 5px rgba(255, 255, 0, 1);
 }
 
+/* CSS for the slider "thumb" if and only if Input is in focus (i.e. dark mode is selected) */
 input:checked + .slider_dark_mode:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
+/* CSS for the round dark mode slider */
 .slider_dark_mode.round {
   border-radius: 34px;
 }
 
+/* CSS for the round dark mode slider thumb */
 .slider_dark_mode.round:before {
   border-radius: 50%;
 }
@@ -193,8 +199,7 @@ input:checked + .slider_dark_mode:before {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
-	justify-content: flex-end;
-	/* get proper allignment ?*/ FIXME 
+	justify-content: flex-end; 
 }
 
 #main_title_div {
@@ -359,8 +364,21 @@ input:checked + .slider_dark_mode:before {
 } 
 
 .mute_icon {
-	height: 2vmax;
-	width: 2vmax;
+	height: 1.25vmax;
+	width: 1.25vmax;
+	font-size: 1.50vmax;
+	margin-right: 0.70vmax;
+	color: rgba(0, 0, 0, 1);
+}
+
+.slider_icons {
+	height: 1.25vmax;
+	width: 1.25vmax;
+	font-size: 1.50vmax;
+	margin-right: 0.70vmax;
+	color: rgba(0, 0, 0, 1)
+	/* we need both height/width and font-size in order to both align the icons and keep the 
+	icons the same size as the speaker/mute icons*/
 }
 
 .slider_div {
