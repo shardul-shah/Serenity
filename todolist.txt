@@ -25,3 +25,4 @@ TODO #23: Start using window LocalStorage / cookies for caching so your website 
 TODO #24: Make the website fully follow the concepts of Web Accessibility (can be found here: https://www.w3.org/WAI/fundamentals/accessibility-intro/).
 TODO #25: Add many more different sound types! Add a variety, there is no limit really.
 TODO #26: I am violating DRY principle. Modify the JavaScript code so you aren't repeating code for each slider, each mute icon, each volume, etc - make one function which deals with any kind of sound type, based on its arguments!!!!!!
+TODO #27: Fix the bug where on Safari on iOS, even if you mute sounds and Play the app, the muted sounds are not muted, and all of them still play (not sure if the bug happens on Chrome iOS also).
